@@ -29,7 +29,7 @@ const Navbar = () => {
         </ul>
 
         <div>
-          <a href="contact">
+          <a href="#contact">
             Contact <Image src={assets.arrow_icon} className="w-3" alt="" />
           </a>
         </div>
