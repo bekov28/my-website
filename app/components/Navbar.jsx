@@ -2,11 +2,10 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 
-
 const Navbar = () => {
   return (
     <>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between">
         <a href="#top">
           <Image src={assets.logo} className="w-28 cursor-pointer mr-14" alt="" />
         </a>
