@@ -8,14 +8,15 @@ const Header = () => {
       <div>
         <Image src={assets.profile_img} alt="" className="rounded-full w-32" />
       </div>
-      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-5 font-Ovo">
+      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-5 font-Ovo mt-3">
         Hi! I'm Berdiyor Orzikulov <Image src={assets.hand_icon} alt="" className=" w-6" />
       </h3>
-      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo mt-4">
         Full Stack Web Developer based in Seoul, Korea
       </h1>
-      <p className="max-w-2xl mx-auto font-Ovo">
-        I am a full stack engineer from Uzbekistan with around 1 year of experience in multiple IT companies.
+      <p className="max-w-2xl mx-auto font-Ovo mt-4">
+        I am a full stack engineer from Uzbekistan with around 1 year of experience in multiple IT
+        companies.
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
