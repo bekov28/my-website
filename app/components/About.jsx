@@ -1,6 +1,7 @@
 import { assets, infoList } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import { toolsData } from "@/assets/assets";
 
 const About = () => {
   return (
@@ -32,6 +33,19 @@ const About = () => {
                 <Image src={icon} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
                 <p className="text-gray-600 text-sm">{description}</p>
+              </li>
+            ))}
+          </ul>
+
+          <h4 className="my-6 text-gray-700 font-Ovo">Tools I use</h4>
+          <ul className="flex items-center gap-3 sm:gap-5">
+            {toolsData.map((tool, index) => (
+              <li
+                className="flex items-center justify-center w-12 sm:w-14 border border-gray-400 rounded-lg 
+                cursor-pointer hover:-translate-y-1 duration-500 p-3"
+                key={index}
+              >
+                <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
               </li>
             ))}
           </ul>
