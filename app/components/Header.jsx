@@ -15,8 +15,7 @@ const Header = () => {
         Full Stack Web Developer based in Seoul, Korea
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
-        I am a full stack engineer from Uzbekistan with around 1 year of experience in multiple
-        Korean companies.
+        I am a full stack engineer from Uzbekistan with around 1 year of experience in multiple IT companies.
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
