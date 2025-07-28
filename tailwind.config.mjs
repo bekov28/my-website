@@ -21,6 +21,11 @@ const config = {
       },
     },
   },
+  variants: {
+    extend: {
+      boxShadow: ["hover"],
+    },
+  },
   plugins: [],
 };
 export default config;

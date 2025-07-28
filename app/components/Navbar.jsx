@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (scrollY > 50) {
+      if (scrollY > 100) {
         setIsScroll(true);
       } else {
         setIsScroll(false);
@@ -40,7 +40,11 @@ const Navbar = () => {
           <span className="inline-block h-2 w-2 rounded-full bg-red-500 mt-4 ml-1"></span>
         </div>
 
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+            isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
+          } `}
+        >
           <li>
             <a className="font-Ovo" href="#top">
               Home
