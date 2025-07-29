@@ -17,7 +17,7 @@ const Services = () => {
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
             key={index}
-            className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] 
+            className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] 
              hover:-translate-y-1 duration-500"
           >
             <Image src={icon} alt="" className="w-10" />
