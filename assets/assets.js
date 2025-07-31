@@ -114,14 +114,14 @@ export const serviceData = [
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
-    description: "UI/UX design focuses on creating a seamless user experience...",
+    title: "Database Management",
+    description: "Structuring efficent database models, indexing, caching...",
     link: "",
   },
   {
     icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    title: "DevOps & Deployment",
+    description: "Automate and streamline software development, testing, deployment and infrastructure management...",
     link: "",
   },
 ];
