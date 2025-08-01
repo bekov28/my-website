@@ -13,7 +13,7 @@ const Services = () => {
         web development.{" "}
       </p>
 
-      <div className="grid grid-cols-2 gap-6 my-10">
+      <div className="grid grid-cols-2 sm:grid-cols-auto gap-6 my-10">
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
             key={index}

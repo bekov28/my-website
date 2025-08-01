@@ -20,9 +20,13 @@ const config = {
         white: "4px 4px 0 #fff",
       },
       gridTemplateColumns: {
-        auto: "repeat(auto-fit, minmax(min(200px, 100%), 1fr)",
+        auto: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))",
       },
-      gridTemplateColumns: ["responsive"],
+    },
+  },
+  variants: {
+    extend: {
+      gridTemplateColumns: ["responsive"], // Moved to variants section
     },
   },
   plugins: [],
