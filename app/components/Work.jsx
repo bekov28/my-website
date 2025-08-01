@@ -1,4 +1,6 @@
 import React from "react";
+import { assets, workData } from "@/assets/assets";
+import Image from "next/image";
 
 const Work = () => {
   return (
@@ -10,6 +12,20 @@ const Work = () => {
         Welcome to my web and mobile development portfolio! Explore a collection of projects
         showcasing my expertise in full-stack development.
       </p>
+
+      <div>
+        {workData.map((project, index) => (
+          <div key={index} style={{ backgroundImage: `url(${project.bgImage})` }}>
+            <div>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+            </div>
+            <div>
+              <Image src={assets.send_icon} alt="send_icon" className="w-5" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

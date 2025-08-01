@@ -121,7 +121,8 @@ export const serviceData = [
   {
     icon: assets.graphics_icon,
     title: "DevOps & Deployment",
-    description: "Automate and streamline software development, testing, deployment and infrastructure management...",
+    description:
+      "Automate and streamline software development, testing, deployment and infrastructure management...",
     link: "",
   },
 ];
