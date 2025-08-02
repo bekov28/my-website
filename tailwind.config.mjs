@@ -24,11 +24,6 @@ const config = {
       },
     },
   },
-  variants: {
-    extend: {
-      gridTemplateColumns: ["responsive"], // Moved to variants section
-    },
-  },
   plugins: [],
 };
 export default config;
