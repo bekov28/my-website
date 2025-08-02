@@ -16,6 +16,7 @@ const Work = () => {
       <div>
         {workData.map((project, index) => (
           <div key={index} style={{ backgroundImage: `url(${project.bgImage})` }}>
+            {/* <Image src={project.bgImage} alt="" /> */}
             <div>
               <h2>{project.title}</h2>
               <p>{project.description}</p>
