@@ -48,12 +48,14 @@ const Contact = () => {
             placeholder="Enter your name"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="name"
           />
           <input
             type="email"
             placeholder="Enter your email"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            name="email"
           />
         </div>
         <textarea
@@ -61,6 +63,7 @@ const Contact = () => {
           placeholder="Enter your message"
           required
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          name="message"
         ></textarea>
 
         <button
