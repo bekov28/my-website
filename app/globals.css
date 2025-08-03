@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@source "./pages/**/*.{js,ts,jsx,tsx,mdx}";
+@source "./components/**/*.{js,ts,jsx,tsx,mdx}";
+@source "./app/**/*.{js,ts,jsx,tsx,mdx}";
+
+@theme {
+  --dark-mode: class; /* Default in v4.1.11, optional to include */
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+  --font-family-Outfit: var(--font-outfit), sans-serif;
+  --font-family-Ovo: var(--font-ovo), serif;
+  --box-shadow-black: 4px 4px 0 #000;
+  --box-shadow-white: 4px 4px 0 #fff;
+  --grid-template-columns-auto: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+}
