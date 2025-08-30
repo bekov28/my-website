@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${outfit.className} ${ovo.className} antialiased bg-white dark:bg-darkTheme dark:text-white`}
+        className={`${outfit.variable} ${ovo.variable} antialiased bg-white dark:bg-darkTheme dark:text-white min-h-screen`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
