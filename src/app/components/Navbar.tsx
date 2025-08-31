@@ -1,4 +1,4 @@
-"use client";
+"use client"; //changing server components to client components
 
 import React, { useState } from "react";
 
@@ -16,7 +16,9 @@ const Navbar = () => {
     { href: "/contact", label: "Contact" },
   ];
 
-  return <div>Navbar</div>;
+  return (
+    <div className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50">Navbar</div>
+  );
 };
 
 export default Navbar;
