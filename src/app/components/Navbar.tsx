@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
+  const theme = "dark";
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
@@ -43,6 +45,16 @@ const Navbar = () => {
                 </Link>
               );
             })}
+            <button
+              className="p-2 rounded-lg hover:bg-gray-100 text-primary dark:hover:bg-gray-800 
+            transition-colors cursor-pointer"
+            >
+              {theme === "dark" ? (
+                <SunIcon className="w-5 h-5" />
+              ) : (
+                <MoonIcon className="w-5 h-5" />
+              )}
+            </button>
           </div>
         </div>
       </div>
