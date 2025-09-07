@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { div } from "framer-motion/client";
 
 const Navbar = () => {
   const theme = "dark";
@@ -78,7 +77,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="py-4 space-y-4">
               {menuItems.map((item, index) => (
-                <div key={index}>
+                <div key={index} onClick={toggleMobileMenu}>
                   <Link
                     href={item.href}
                     className="block py-2 hover:text-primary transition-colors"
@@ -88,15 +87,11 @@ const Navbar = () => {
                 </div>
               ))}
               <div>
-                <button
-                  onClick={toggleMobileMenu}
-                  className="md:hidden p-2 rounded-lg hover:bg-gray-500
-		   dark:hover:bg-gray-800 transition-colors cursor-pointer"
-                >
-                  {isMobileMenuOpen ? (
-                    <XMarkIcon className="w-6 h-6" />
+                <button className="flex items-center py-2 hover:text-primary transition-colors">
+                  {theme === "dark" ? (
+                    <SunIcon className="w-5 h-5 mr-2" />
                   ) : (
-                    <Bars3Icon className="w-6 h-6" />
+                    <MoonIcon className="w-5 h-5 mr-2" />
                   )}
                 </button>
               </div>
