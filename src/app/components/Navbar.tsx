@@ -47,7 +47,7 @@ const Navbar = () => {
               );
             })}
             <button
-              className="p-2 rounded-lg hover:bg-gray-100 text-primary dark:hover:bg-gray-800 
+              className="p-2 rounded-lg hover:bg-gray-100 text-white hover:text-primary dark:hover:bg-gray-800 
             transition-colors cursor-pointer"
             >
               {theme === "dark" ? (
