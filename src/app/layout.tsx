@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Navbar />
-          <main className="min-h-screen pt-24"> {children}</main>
+          <main className="min-h-screen pt-24 dark:text-white text-black"> {children}</main>
           <footer>Footer</footer>
         </ThemeProvider>
       </body>

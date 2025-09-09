@@ -28,7 +28,7 @@ const Navbar = () => {
       className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50 
     border-b border-gray-200 dark:border-gray-700 shadow-sm transition-colors"
     >
-      <div className="container max-w-7xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4 text-black dark:text-white">
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
@@ -43,7 +43,7 @@ const Navbar = () => {
                   key={item.href}
                   href={item.href}
                   className={`hover:text-primary transition-colors font-medium ${
-                    isActive ? "text-primary" : "text-black"
+                    isActive ? "text-primary" : ""
                   }`}
                 >
                   {item.label}
