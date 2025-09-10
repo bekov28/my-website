@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaGithub, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -16,12 +18,35 @@ const Hero = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Hi, I'm <span className="text-primary">Berd</span>
+          Hi, I&apos;m <span className="text-primary">Berd</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-          Full Stack Developer | UI/UX Enthusiast | Software Engineer
+          Full Stack Developer | UI/UX Enthusiast | Web Developer
         </p>
+
+        <div className="flex justify-center space-x-4 mb-8">
+          <Link
+            href="/"
+            className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
+          >
+            <FaGithub />
+          </Link>
+          <Link
+            href="/"
+            className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            href="/"
+            className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
+          >
+            <FaTelegram />
+          </Link>
+        </div>
+
+        
       </div>
     </section>
   );
