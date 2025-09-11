@@ -22,7 +22,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-          Full Stack Developer | UI/UX Enthusiast | Software engineer
+          Full Stack Developer | UI/UX Enthusiast | Business Analyst
         </p>
 
         <div className="flex justify-center space-x-4 mb-8">
