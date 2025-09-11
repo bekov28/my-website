@@ -29,6 +29,18 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Tech Stack I used in this portfolio-project:
+
+- Next.js - React Framework for full stack applications
+- TypeScript - a programming language with strict typing
+- EsLint - a plugin tool for identifying and reporting issues
+- Tailwind CSS - a utility first CSS for rapid styling
+- App Router - a router and rendering model in Next.js (introduced in Next.js 13)
+- TurboPack - an incremental bundler optimized for JavaScript and TypeScript, provides faster development
+- Framer Motion - an open source animation library for React
+- HeroIcons - special React-based icons by the Tailwind CSS creators
+
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
