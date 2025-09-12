@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
+//Projects
 const Projects = () => {
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
