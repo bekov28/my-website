@@ -7,7 +7,6 @@ const Blogs = () => {
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
       <h2 className="text-3xl font-bold mb-12 text-center">Latest Blog Posts</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {blogs.map((blog) => (
           <article key={blog.slug} className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6">
@@ -32,6 +31,15 @@ const Blogs = () => {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="text-center mt-12">
+        <Link
+          href="/blogs"
+          className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors"
+        >
+          View All Posts
+        </Link>
       </div>
     </section>
   );
