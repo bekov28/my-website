@@ -1,6 +1,6 @@
 import { FaCode } from "react-icons/fa";
 
-//About page
+//About page ~~
 const AboutPage = () => {
   return (
     <div className="container max-w-7xl mx-auto py-20">
