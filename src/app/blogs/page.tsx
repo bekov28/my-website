@@ -1,4 +1,5 @@
 const BlogsPage = () => {
+  //Blogs Section
   return <div>Blogs</div>;
 };
 
