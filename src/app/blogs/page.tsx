@@ -1,5 +1,5 @@
 const BlogsPage = () => {
-  //Blogs Section
+  //Blogs Section -- 
   return <div>Blogs</div>;
 };
 
