@@ -9,6 +9,7 @@ import { useTheme } from "../context/ThemeContext";
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  // const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
   const toggleMobileMenu = () => {
@@ -93,7 +94,10 @@ const Navbar = () => {
               ))}
               <div>
                 <button
-                  onClick={toggleTheme}
+                  onClick={() => {
+                    toggleTheme();
+                    setIsMobileMenuOpen(false); //close menu after theme toggle
+                  }}
                   className="flex items-center py-2 hover:text-primary transition-colors"
                 >
                   {theme === "dark" ? (
