@@ -11,9 +11,7 @@ const Footer = () => {
             <Link href="/" className="text-xl font-bold text-primary">
               Berdiyor Orzikulov
             </Link>
-            <p className="text-sm text-secondary mt-2">
-              © {new Date().getFullYear()} All rights reserved.
-            </p>
+            <p className="text-sm text-secondary mt-2">© {new Date().getFullYear()} All rights reserved.</p>
           </div>
 
           <div className="flex space-x-6">

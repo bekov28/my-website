@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
 
 //About page ~~
 const AboutPage = () => {
@@ -26,12 +26,12 @@ const AboutPage = () => {
               <li>HTML5 / CSS3</li>
               <li>JavaScript / TypeScript</li>
               <li>React.js / Next.js / Vue.js</li>
-              <li>Tailwind CSS / SASS</li>
+              <li>Tailwind CSS / SCSS</li>
             </ul>
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
-            <FaCode className="h-8 w-8 text-primary mb-4" />
+            <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
               <li>Node.js</li>
@@ -42,7 +42,7 @@ const AboutPage = () => {
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
-            <FaCode className="h-8 w-8 text-primary mb-4" />
+            <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
               <li>Git / GitHub / GitLab</li>
@@ -58,10 +58,43 @@ const AboutPage = () => {
       <section className="mb-16">
         <h2 className="section-title">Experience</h2>
 
-        <div>
-          <div className="bg-white dark:bg-dark/50 rounded-lg shadow-md">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
-            <p className=""></p>
+            <p className="text-primary mb-2">coForward · 2025.03 ~ Present</p>
+            <ul className="text-secondary space-y-2 list-disc list-inside">
+              <li>
+                Built interactive and reusable user interface components with HTML, CSS and Vue.js
+              </li>
+              <li>
+                Developed and designed the finance and trade web platform using JavaScript (ES6+)
+                and implemented server-side functionality using Java, contributing to the
+                development of RESTful APIs for front-end
+              </li>
+              <li>
+                Collaborated with senior developers and designers to translate UI/UX wireframes into
+                functional code
+              </li>
+              <li>
+                Utilized version control with Git/GitLab for code management and gained experience
+                in debugging and troubleshooting issues according the entire application stack
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">IT BootCamp Graduate</h3>
+            <p className="text-primary mb-2">BeCoder · 2024.06 - 2024.12</p>
+            <ul className="text-secondary space-y-2 list-disc list-inside">
+              <li>Created user-friendly and responsive web applications using React.js</li>
+              <li>
+                Integrated frontend and backend systems through APIs with Node.js using Express.js
+                (MERN Stack)
+              </li>
+              <li>
+                Worked with design tools, such as Figma and colloborated with other developers
+              </li>
+            </ul>
           </div>
         </div>
       </section>

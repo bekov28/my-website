@@ -9,7 +9,6 @@ import { useTheme } from "../context/ThemeContext";
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  // const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
   const toggleMobileMenu = () => {
