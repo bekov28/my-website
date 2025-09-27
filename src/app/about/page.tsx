@@ -98,6 +98,42 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* education section */}
+      <section className="mb-16">
+        <h2 className="section-title">Education</h2>
+
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Master of Business Administration (MBA)</h3>
+            <p className="text-primary mb-2">Dongseo University · 2016.09 - 2018.08</p>
+            <p className="text-secondary">
+              Studied marketing, finance, international trade, economics and business
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tech certificates/courses */}
+      <section className="mb-16">
+        <h2 className="section-title">IT courses/certificates</h2>
+
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">
+              Responsive Web Design Course (+certificate)
+            </h3>
+            <p className="text-primary mb-2">freeCodeCamp · 2024.12 - 2025.02</p>
+            <p className="text-secondary">
+              Completed 300-hour course and gained foundation web development skills in HTML and CSS
+            </p>
+            <ul className="text-secondary space-y-2 list-disc list-inside">
+              <li>Responsive Web Design, HTML Structure</li>
+              <li>CSS Box Model, CSS Grid, CSS Animations, CSS Flexbox and others</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
