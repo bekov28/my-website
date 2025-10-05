@@ -42,6 +42,9 @@ const ContactPage = () => {
         email: "",
         message: "",
       });
+      setTimeout(() => {
+        setStatus("idle");
+      }, 3000);
     } catch (error) {
       setStatus("error");
       console.log("Error sending message", error);

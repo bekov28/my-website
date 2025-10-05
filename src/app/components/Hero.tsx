@@ -1,13 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+
+import { motion } from "framer-motion";
+import { fadeInUp, scaleIn } from "@/utils/animation";
 
 const Hero = () => {
   return (
     <section className="py-28 container max-w-7xl px-4">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="flex flex-col items-center mb-4">
+        <motion.div
+          className="flex flex-col items-center mb-4"
+          {...scaleIn}
+          transition={{ delay: 0.2 }}
+        >
           <Image
             src="/profile_img.jpg"
             alt="profile image"
@@ -15,15 +24,23 @@ const Hero = () => {
             height={100}
             className="rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary"
           />
-        </div>
+        </motion.div>
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <motion.div
+          {...fadeInUp}
+          transition={{ delay: 0.3 }}
+          className="text-4xl md:text-6xl font-bold mb-6"
+        >
           Hi, I&apos;m <span className="text-primary">Berd</span>
-        </h1>
+        </motion.div>
 
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+        <motion.div
+          {...fadeInUp}
+          transition={{ delay: 0.5 }}
+          className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
+        >
           Full Stack Developer | UI/UX Enthusiast | Business Analyst
-        </p>
+        </motion.div>
 
         <div className="flex justify-center space-x-4 mb-8">
           <Link
