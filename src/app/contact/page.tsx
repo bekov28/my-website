@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { pageTransition } from "@/utils/animation";
 
 interface FormData {
   name: string;
@@ -59,7 +61,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container max-w-7xl mx-auto py-20">
+    <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
       <h1 className="text-4xl font-bold mb-20 text-center">Contact Me</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -172,7 +174,7 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default ContactPage;

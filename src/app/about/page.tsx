@@ -1,22 +1,28 @@
+"use client";
+
 import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { pageTransition } from "@/utils/animation";
 
 //About page ~~
 const AboutPage = () => {
   return (
-    <div className="container max-w-7xl mx-auto py-20">
-      <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+    <motion.div className="container max-w-7xl mx-auto py-20">
+      <motion.div {...pageTransition}>
+        <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+      </motion.div>
 
       {/* bio section */}
-      <section className="mb-16">
+      <motion.section className="mb-16">
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
           I&apos;m a passionate Full Stack Developer with expertise in building modern web
           applications. With a strong foundation in both frontend and backend technologies, I create
           seamless user interfaces and robust server-side solutions.
         </p>
-      </section>
+      </motion.section>
 
       {/* skills section */}
-      <section className="mb-16">
+      <motion.section className="mb-16">
         <h2 className="section-title">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
@@ -52,7 +58,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* experience section */}
       <section className="mb-16">
@@ -134,7 +140,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 export default AboutPage;

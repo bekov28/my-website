@@ -1,11 +1,15 @@
+"use client";
+
 import { projects } from "@/contents/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { pageTransition } from "@/utils/animation";
 
 const ProjectPage = () => {
   return (
-    <div className="container max-w-7xl mx-auto py-20">
+    <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
       <h1 className="text-4xl font-bold mb-4 text-center">My Projects</h1>
       <p className="text-lg text-secondary mb-24 text-center">
         Here are some of my recent projects. Click on the links to view the code or live demo.
@@ -63,7 +67,7 @@ const ProjectPage = () => {
           </article>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default ProjectPage;
