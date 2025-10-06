@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { pageTransition } from "@/utils/animation";
+import { pageTransition, slideInLeft, slideInRight } from "@/utils/animation";
 
 interface FormData {
   name: string;
@@ -66,7 +66,7 @@ const ContactPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* contact info */}
-        <div className="space-y-8">
+        <motion.div className="space-y-8" {...slideInLeft}>
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="text-secondary md:w-2/3">
             I&apos;m always open to discussing new projects, creative ideas, or opportunities to be
@@ -105,10 +105,14 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* contact form */}
-        <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+        <motion.div
+          className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+          {...slideInRight}
+          transition={{ delay: 0.2 }}
+        >
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -172,7 +176,7 @@ const ContactPage = () => {
               <p className="text-red-500 text-center">Failed to send message. Please try again!</p>
             )}
           </form>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

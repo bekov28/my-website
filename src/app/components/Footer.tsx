@@ -11,24 +11,26 @@ const Footer = () => {
             <Link href="/" className="text-xl font-bold text-primary">
               Berdiyor Orzikulov
             </Link>
-            <p className="text-sm text-secondary mt-2">© {new Date().getFullYear()} All rights reserved.</p>
+            <p className="text-sm text-secondary mt-2">
+              © {new Date().getFullYear()} All rights reserved.
+            </p>
           </div>
 
           <div className="flex space-x-6">
             <Link
-              href="/"
+              href="https://github.com/bekov28"
               className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaGithub />
             </Link>
             <Link
-              href="/"
+              href="https://www.linkedin.com/in/berdiyor-orzikulov/"
               className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaLinkedin />
             </Link>
             <Link
-              href="/"
+              href="https://t.me/bekov28"
               className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaTelegram />

@@ -48,19 +48,19 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
         >
           <Link
-            href="/"
+            href="https://github.com/bekov28"
             className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
           >
             <FaGithub />
           </Link>
           <Link
-            href="/"
+            href="https://www.linkedin.com/in/berdiyor-orzikulov/"
             className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
           >
             <FaLinkedin />
           </Link>
           <Link
-            href="/"
+            href="https://t.me/bekov28"
             className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
           >
             <FaTelegram />
