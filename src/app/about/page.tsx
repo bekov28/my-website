@@ -70,7 +70,7 @@ const AboutPage = () => {
             <p className="text-primary mb-2">coForward · 2025.03 ~ Present</p>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
-                Built interactive and reusable user interface components with HTML, CSS and Vue.js
+                Built interactive and reusable user interface components with HTML5, CSS3, Vanilla JS and Vue.js
               </li>
               <li>
                 Developed and designed the finance and trade web platform using JavaScript (ES6+)
