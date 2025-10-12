@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition, slideInLeft, slideInRight } from "@/utils/animation";
+import React from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -21,38 +23,60 @@ const ContactPage = () => {
   });
 
   const [status, setStatus] = useState<FormStatus>("idle");
+  const form = useRef<HTMLFormElement>(null);
 
+  //Custom API for handling emails through backend
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setStatus("loading");
+  //   try {
+  //     const response = await fetch("/api/contact", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     if (!response.ok) {
+  //       throw new Error("Failed to send message");
+  //     }
+
+  //     setStatus("success");
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       message: "",
+  //     });
+  //     setTimeout(() => {
+  //       setStatus("idle");
+  //     }, 3000);
+  //   } catch (error) {
+  //     setStatus("error");
+  //     console.log("Error sending message", error);
+  //   }
+  // };
+
+  //EmailJS to handle Emails from frontend
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+
+    if (!form.current) return;
+
+    emailjs
+      .sendForm("service_mrbbnj9", "template_ugplk9l", form.current, {
+        publicKey: "NaLzH2NMYiLPH7I-X",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
         },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-
-      setStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-      setTimeout(() => {
-        setStatus("idle");
-      }, 3000);
-    } catch (error) {
-      setStatus("error");
-      console.log("Error sending message", error);
-    }
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
@@ -113,7 +137,7 @@ const ContactPage = () => {
           {...slideInRight}
           transition={{ delay: 0.2 }}
         >
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form className="space-y-6" onSubmit={handleSubmit} ref={form}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name
