@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: `This front-end-only website enables users to rent and buy campcars. 
     Built in React.js and JavaScript, this website features a user-friendly interface that allows users to rent and buy campcars. 
     Used tools in this project also include styled-components, MUI library, React Router and React Hooks`,
-    technologies: ["React.js", "MUI", "Styled components", "React Router"],
+    technologies: ["React.js", "MUI", "Styled components", "React Router", "EmailJS"],
     githubLink: "https://github.com/bekov28/camper-project-react",
     demoLink: "https://campertestsite.netlify.app/",
     image: "/projects/camper.png",
