@@ -8,8 +8,8 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 
 interface FormData {
-  name: string;
-  email: string;
+  user_name: string;
+  user_email: string;
   message: string;
 }
 
@@ -17,8 +17,8 @@ type FormStatus = "idle" | "loading" | "success" | "error";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
 
@@ -61,21 +61,25 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-
     if (!form.current) return;
 
-    emailjs
-      .sendForm("service_mrbbnj9", "template_ugplk9l", form.current, {
+    try {
+      await emailjs.sendForm("service_mrbbnj9", "template_ugplk9l", form.current, {
         publicKey: "NaLzH2NMYiLPH7I-X",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      });
+      setStatus("success");
+      setFormData({
+        user_name: "",
+        user_email: "",
+        message: "",
+      });
+      setTimeout(() => {
+        setStatus("idle");
+      }, 3000);
+    } catch (error) {
+      setStatus("error");
+      console.log("Error sending message", error);
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
@@ -139,15 +143,15 @@ const ContactPage = () => {
         >
           <form className="space-y-6" onSubmit={handleSubmit} ref={form}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="user_name" className="block text-sm font-medium mb-2">
                 Name
               </label>
               <input
                 type="text"
-                id="name"
+                id="user_name"
                 name="user_name"
                 required
-                value={formData.name}
+                value={formData.user_name}
                 onChange={handleChange}
                 placeholder="Enter your name"
                 className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2
@@ -156,14 +160,14 @@ const ContactPage = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="user_email" className="block text-sm font-medium mb-2">
                 Email
               </label>
               <input
                 type="email"
-                id="email"
+                id="user_email"
                 name="user_email"
-                value={formData.email}
+                value={formData.user_email}
                 onChange={handleChange}
                 required
                 placeholder="Enter your email"
