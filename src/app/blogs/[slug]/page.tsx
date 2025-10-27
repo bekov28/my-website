@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const BlogPage = () => {
   return (
-    <section className="container max-w-7xl mx-auto py-20">
+    <section className="container max-w-7xl mx-auto py-15">
       <h1 className="text-4xl font-bold mb-4 text-center">How I became a software developer?</h1>
-      <h2 className="py-20 text-2xl leading-10">
+      <h2 className="py-15 text-2xl leading-10">
         Hi, first of all, it is good to meet you in my personal website! Today I wanted to allocate
         some time to write how I became a software developer without a CS degree! Yes, you read
         correctly now- I dont have a Computer Science Degree. Hmm, perhaps after reading this you
@@ -16,13 +18,23 @@ const BlogPage = () => {
         seriously since 2024 summer from HTML and CSS. Before that I had already been working for
         two years as a Marketing and Customer Service Specialist in one of the well-known fintech
         companies in Seoul. In fact, when I worked as a Marketing staff that time, I was not just
-        enjoying the work and didnt not see any self-development in myself. This was the reason when
+        enjoying the work and simly didnt see any self-development in myself. This was the reason when
         I decided to enroll an online coding bootcamp. A friend of mine (Uzbek) who was a senior
         software engineer in a Korean company had opened an online coding course where he was
         willing to teach coding from scratch. That was the moment that I realized I need to enroll
         and be really serious about my career.
       </h2>
-      <h2 className="py-20 text-2xl leading-10">
+      <div className="flex justify-center">
+        <Image
+          src="/blog_image.png"
+          alt="blog image"
+          width={600}
+          height={500}
+          className="mt-15 rounded-2xl"
+        />
+      </div>
+
+      <h2 className="py-15 text-2xl leading-10">
         So, I learned coding from very basics in this IT bootcamp. After finishing HTML and CSS and
         did some small projects, we then moved to JavaScript where I was simply blown away. It was
         JavaScript that the real programming language we needed to deal with. First, it didnt seem
