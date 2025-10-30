@@ -1,4 +1,9 @@
+"use client";
 import React from "react";
+
+const handleClick = () => {
+  window.alert("Under investigation...");
+};
 
 const Newsletter = () => {
   return (
@@ -22,6 +27,7 @@ const Newsletter = () => {
                text-gray-500 dark:bg-dark focus:outline-none focus:ring-2 focus:ring-primary md:w-auto w-[60%]"
               />
               <button
+                onClick={handleClick}
                 type="submit"
                 className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/80 
                 transition-colors md:w-auto w-[60%] inline-block"
