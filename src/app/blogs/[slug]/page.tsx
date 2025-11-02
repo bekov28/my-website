@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { pageTransition } from "@/utils/animation";
 
 const BlogPage = () => {
   return (
-    <section className="container max-w-7xl mx-auto py-15">
+    <motion.section className="container max-w-7xl mx-auto py-15" {...pageTransition}>
       <h1 className="text-4xl font-bold mb-4 text-center">How I became a software developer?</h1>
       <h2 className="py-15 text-2xl leading-10">
         Hi, first of all, it is good to meet you in my personal website! Today I wanted to allocate
@@ -18,9 +22,9 @@ const BlogPage = () => {
         seriously since 2024 summer from HTML and CSS. Before that I had already been working for
         two years as a Marketing and Customer Service Specialist in one of the well-known fintech
         companies in Seoul. In fact, when I worked as a Marketing staff that time, I was not just
-        enjoying the work and simly didnt see any self-development in myself. This was the reason when
-        I decided to enroll an online coding bootcamp. A friend of mine (Uzbek) who was a senior
-        software engineer in a Korean company had opened an online coding course where he was
+        enjoying the work and simly didnt see any self-development in myself. This was the reason
+        when I decided to enroll an online coding bootcamp. A friend of mine (Uzbek) who was a
+        senior software engineer in a Korean company had opened an online coding course where he was
         willing to teach coding from scratch. That was the moment that I realized I need to enroll
         and be really serious about my career.
       </h2>
@@ -49,7 +53,7 @@ const BlogPage = () => {
         for backend. And at the end of year, after 6months of study, we finished the course and
         finally started to apply for jobs (to be continued...).
       </h2>
-    </section>
+    </motion.section>
   );
 };
 

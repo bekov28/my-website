@@ -25,7 +25,7 @@ const AboutPage = () => {
       <motion.section className="mb-16">
         <h2 className="section-title">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
@@ -36,7 +36,7 @@ const AboutPage = () => {
             </ul>
           </div>
 
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
@@ -47,7 +47,7 @@ const AboutPage = () => {
             </ul>
           </div>
 
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6">
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
             <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
@@ -70,7 +70,8 @@ const AboutPage = () => {
             <p className="text-primary mb-2">coForward · 2025.03 ~ Present</p>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
-                Built interactive and reusable user interface components with HTML5, CSS3, Vanilla JS and Vue.js
+                Built interactive and reusable user interface components with HTML5, CSS3, Vanilla
+                JS and Vue.js
               </li>
               <li>
                 Developed and designed the finance and trade web platform using JavaScript (ES6+)
