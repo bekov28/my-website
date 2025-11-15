@@ -14,7 +14,7 @@ const Projects = () => {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
+            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform duration-150 hover:scale-102 cursor-pointer "
           >
             <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
               <Image
