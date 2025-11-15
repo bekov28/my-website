@@ -4,7 +4,7 @@ import { blogs } from "@/contents/blogs";
 import Link from "next/link";
 import { FaCalendar, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { scaleIn} from "@/utils/animation";
+import { scaleIn } from "@/utils/animation";
 
 const BlogsPage = () => {
   return (
@@ -13,27 +13,26 @@ const BlogsPage = () => {
 
       <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...scaleIn}>
         {blogs.map((blog) => (
-          <article key={blog.slug} className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6">
+          <article
+            key={blog.slug}
+            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform hover:scale-102"
+          >
             <Link href={`/blogs/${blog.slug}`} className="flex flex-col gap-4">
-              
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
                 {blog.title}
               </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
+              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
+                <span className="flex items-center">
+                  <FaCalendar className="mr-2" />
+                  {new Date(blog.date).toLocaleDateString()}
+                </span>
+                <span className="flex items-center">
+                  <FaClock className="mr-2" />
+                  {blog.readTime}
+                </span>
+              </div>
             </Link>
-
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
-
-            <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
-              <span className="flex items-center">
-                <FaCalendar className="mr-2" />
-                {new Date(blog.date).toLocaleDateString()}
-              </span>
-
-              <span className="flex items-center">
-                <FaClock className="mr-2" />
-                {blog.readTime}
-              </span>
-            </div>
           </article>
         ))}
       </motion.div>

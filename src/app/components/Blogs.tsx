@@ -17,21 +17,18 @@ const Blogs = () => {
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
                 {blog.title}
               </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
+              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
+                <span className="flex items-center">
+                  <FaCalendar className="mr-2" />
+                  {new Date(blog.date).toLocaleDateString()}
+                </span>
+                <span className="flex items-center">
+                  <FaClock className="mr-2" />
+                  {blog.readTime}
+                </span>
+              </div>
             </Link>
-
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
-
-            <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
-              <span className="flex items-center">
-                <FaCalendar className="mr-2" />
-                {new Date(blog.date).toLocaleDateString()}
-              </span>
-
-              <span className="flex items-center">
-                <FaClock className="mr-2" />
-                {blog.readTime}
-              </span>
-            </div>
           </article>
         ))}
       </div>
