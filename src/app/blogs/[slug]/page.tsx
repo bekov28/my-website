@@ -39,8 +39,9 @@ const BlogPage = () => {
         Spring Boot (both Gradle and Maven tools) and automate the tasks. I like solving complex
         tasks and communicate with other developers and UX/UI designers to fully understand the
         business needs. My goal is to improve myself at least by 1% everyday, learn new technologies
-        and finally contribute to the society as much as I could do. Feel free to drop me a message
-        in LinkedIn or via Facebook and I will be more than happy to learn about you.
+        and finally contribute to the society as much as I could do. Wheather you have projects in
+        mind or just for fun, feel free to drop me a message in LinkedIn and I will be more than
+        happy to hear from you. See you on next blog!
       </h2>
     </motion.section>
   );
