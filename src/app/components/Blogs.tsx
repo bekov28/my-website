@@ -1,11 +1,13 @@
+"use client";
 import { blogs } from "@/contents/blogs";
 import Link from "next/link";
 import React from "react";
 import { FaCalendar, FaClock } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Blogs = () => {
   return (
-    <section className="py-20 container max-w-7xl mx-auto px-4 ">
+    <motion.section className="py-20 container max-w-7xl mx-auto px-4 ">
       <h2 className="text-3xl font-bold mb-12 text-center">Latest Blog Posts</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {blogs.map((blog) => (
@@ -41,7 +43,7 @@ const Blogs = () => {
           View All Posts
         </Link>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

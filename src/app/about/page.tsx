@@ -3,6 +3,8 @@
 import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
+import { scaleIn } from "@/utils/animation";
+import Image from "next/image";
 
 //About page ~~
 const AboutPage = () => {
@@ -10,19 +12,43 @@ const AboutPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
         <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+        <div className="flex justify-center mb-10 gap-15 ">
+          <Image
+            src="/blog_image.png"
+            alt="berd"
+            width={300}
+            height={250}
+            className="rounded-2xl"
+          ></Image>
+          <div className="">
+            <p>
+              Name: <span className="text-primary">Berd</span>
+            </p>
+            <p>
+              Nationality: <span className="text-primary">Uzbekistan</span>
+            </p>
+            <p>
+              Current Residence: <span className="text-primary">Seoul, South Korea</span>
+            </p>
+            <p>
+              Interest: <span className="text-primary">Web, Mobile, Web3, Blockchain</span>
+            </p>
+          </div>
+        </div>
       </motion.div>
 
       {/* bio section */}
-      <motion.section className="mb-16">
+      <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web
-          applications. With a strong foundation in both frontend and backend technologies, I create
-          seamless user interfaces and robust server-side solutions.
+          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1+
+          years of expertise in building modern web applications. With a strong foundation in both{" "}
+          <span className="text-primary">frontend and backend</span> technologies, I create seamless
+          user interfaces and robust server-side solutions.
         </p>
       </motion.section>
 
       {/* skills section */}
-      <motion.section className="mb-16">
+      <motion.section className="mb-16" {...scaleIn}>
         <h2 className="section-title">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
