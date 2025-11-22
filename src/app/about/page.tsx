@@ -20,7 +20,7 @@ const AboutPage = () => {
             height={250}
             className="rounded-2xl"
           ></Image>
-          <div className="">
+          <div className="flex flex-col gap-3">
             <p>
               Name: <span className="text-primary">Berd</span>
             </p>
@@ -31,7 +31,19 @@ const AboutPage = () => {
               Current Residence: <span className="text-primary">Seoul, South Korea</span>
             </p>
             <p>
-              Interest: <span className="text-primary">Web, Mobile, Web3, Blockchain</span>
+              Visa Type: <span className="text-primary">F-5 (Permanent Resident)</span>
+            </p>
+            <p>
+              Foreign Languages:{" "}
+              <span className="text-primary">English, Korean, Russian, Uzbek</span>
+            </p>
+            <p>
+              Interests:{" "}
+              <span className="text-primary">Web, Mobile, Web3, Backend, Algorithms</span>
+            </p>
+            <p>
+              Hobby:
+              <span className="text-primary"> Reading tech blogs, playing chess</span>
             </p>
           </div>
         </div>
