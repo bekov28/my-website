@@ -1,11 +1,21 @@
+"use client";
 import { projects } from "@/contents/projects";
+import { Project } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { MouseEvent } from "react";
 
 //Projects
 const Projects = () => {
+  const handleClick = (project: Project) => (e: MouseEvent<HTMLAnchorElement>) => {
+    if (!project.demoLink) {
+      e.preventDefault();
+      alert("Still under development...");
+    }
+  };
+
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
       <h2 className="text-3xl font-bold mb-12 text-center">Check My Projects</h2>
@@ -28,7 +38,8 @@ const Projects = () => {
 
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-
+            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.role}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.period}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
                 <span
@@ -51,9 +62,10 @@ const Projects = () => {
               </Link>
 
               <Link
-                href={project.demoLink}
+                href={project.demoLink || "#"}
                 target="_blank"
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                onClick={handleClick(project)}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
                 <span>Live Demo</span>
