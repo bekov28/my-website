@@ -1,14 +1,29 @@
 "use client";
 
 import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
-import { motion, px } from "framer-motion";
+import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { scaleIn } from "@/utils/animation";
 import Image from "next/image";
 import { certificates } from "@/contents/certificates";
+import { useState } from "react";
+import { Certificate } from "@/types";
 
 //About page ~~
 const AboutPage = () => {
+  const [selectedImage, setSelectedImage] = useState<Certificate | null>(null); //TypeScript Union type
+  const [isModalOpen, setIsModalOpen] = useState(false); //changing the state using useState Hook
+
+  const openModal = (certificate: Certificate) => {
+    setSelectedImage(certificate);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
+
   return (
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
@@ -178,7 +193,10 @@ const AboutPage = () => {
                 <li>{certificate.details[0]}</li>
                 <li>{certificate.details[1]}</li>
               </ul>
-              <div className="flex justify-center mt-10 rounded-lg overflow-hidden cursor-pointer">
+              <div
+                className="flex justify-center mt-10 rounded-lg overflow-hidden cursor-pointer"
+                onClick={() => openModal(certificate)}
+              >
                 <Image
                   src={certificate.image}
                   alt={certificate.title}
@@ -190,6 +208,27 @@ const AboutPage = () => {
             </div>
           ))}
           {/* {Modal} */}
+          <div className="relative max-w-4xl max-h-full">
+            {isModalOpen && selectedImage && (
+              <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+                <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
+                  <button
+                    onClick={closeModal}
+                    className="cursor-pointer absolute -top-10 right-0 text-white text-2xl hover:text-gray-300 z-10"
+                  >
+                    x
+                  </button>
+                  <Image
+                    src={selectedImage.image}
+                    alt={selectedImage.title}
+                    width={800}
+                    height={600}
+                    className="object-contain max-w-full max-h-full rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
     </motion.div>
