@@ -17,3 +17,11 @@ export interface Blog {
   readTime: string;
   slug: string;
 }
+
+export interface Certificate {
+  title: string;
+  period: string;
+  description: string;
+  details: string[];
+  image: string;
+}

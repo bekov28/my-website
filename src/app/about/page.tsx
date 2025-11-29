@@ -1,10 +1,11 @@
 "use client";
 
 import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, px } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { scaleIn } from "@/utils/animation";
 import Image from "next/image";
+import { certificates } from "@/contents/certificates";
 
 //About page ~~
 const AboutPage = () => {
@@ -52,8 +53,9 @@ const AboutPage = () => {
       {/* bio section */}
       <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1+
-          years of expertise in building modern web applications. With a strong foundation in both{" "}
+          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with
+          overall 2 years of experience (of which 1 year is professional experience) in building
+          modern web applications. With a strong foundation in both{" "}
           <span className="text-primary">frontend and backend</span> technologies, I create seamless
           user interfaces and robust server-side solutions.
         </p>
@@ -164,19 +166,30 @@ const AboutPage = () => {
         <h2 className="section-title">IT courses/certificates</h2>
 
         <div className="max-w-3xl mx-auto space-y-8">
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Responsive Web Design Course (+certificate)
-            </h3>
-            <p className="text-primary mb-2">freeCodeCamp · 2024.12 - 2025.02</p>
-            <p className="text-secondary">
-              Completed 300-hour course and gained foundation web development skills in HTML and CSS
-            </p>
-            <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>Responsive Web Design, HTML Structure</li>
-              <li>CSS Box Model, CSS Grid, CSS Animations, CSS Flexbox and others</li>
-            </ul>
-          </div>
+          {certificates.map((certificate) => (
+            <div
+              key={certificate.title}
+              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            >
+              <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
+              <p className="text-primary mb-2">{certificate.period}</p>
+              <p className="text-secondary">{certificate.description}</p>
+              <ul className="text-secondary space-y-2 list-disc list-inside">
+                <li>{certificate.details[0]}</li>
+                <li>{certificate.details[1]}</li>
+              </ul>
+              <div className="flex justify-center mt-10 rounded-lg overflow-hidden cursor-pointer">
+                <Image
+                  src={certificate.image}
+                  alt={certificate.title}
+                  width={400}
+                  height={400}
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          ))}
+          {/* {Modal} */}
         </div>
       </section>
     </motion.div>

@@ -53,6 +53,7 @@ const Projects = () => {
 
             <div className="flex gap-4 mt-2">
               <Link
+                onClick={handleClick(project)}
                 href={project.githubLink}
                 target="_blank"
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
@@ -62,10 +63,10 @@ const Projects = () => {
               </Link>
 
               <Link
+                onClick={handleClick(project)}
                 href={project.demoLink || "#"}
                 target="_blank"
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
-                onClick={handleClick(project)}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
                 <span>Live Demo</span>
