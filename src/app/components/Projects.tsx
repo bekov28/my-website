@@ -1,21 +1,12 @@
 "use client";
 import { projects } from "@/contents/projects";
-import { Project } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { MouseEvent } from "react";
 
 //Projects
 const Projects = () => {
-  const handleClick = (project: Project) => (e: MouseEvent<HTMLAnchorElement>) => {
-    if (!project.demoLink) {
-      e.preventDefault();
-      alert("Still under development...");
-    }
-  };
-
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
       <h2 className="text-3xl font-bold mb-12 text-center">Check My Projects</h2>
@@ -53,20 +44,30 @@ const Projects = () => {
 
             <div className="flex gap-4 mt-2">
               <Link
-                onClick={handleClick(project)}
-                href={project.githubLink}
-                target="_blank"
+                href={project.githubLink || "#"}
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                target={project.githubLink ? "_blank" : "_self"}
+                onClick={(e) => {
+                  if (!project.githubLink) {
+                    e.preventDefault();
+                    alert("Sorry, not sharable...");
+                  }
+                }}
               >
                 <FaGithub className="w-5 h-5" />
                 <span>Code</span>
               </Link>
 
               <Link
-                onClick={handleClick(project)}
                 href={project.demoLink || "#"}
-                target="_blank"
+                target={project.demoLink ? "_blank" : "_self"}
                 className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                onClick={(e) => {
+                  if (!project.demoLink) {
+                    e.preventDefault();
+                    alert("Sorry, still under development...");
+                  }
+                }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
                 <span>Live Demo</span>

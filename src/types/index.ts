@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   technologies: string[];
   githubLink: string;
-  demoLink?: string;
+  demoLink: string;
   image: string;
   role: string;
   period: string;

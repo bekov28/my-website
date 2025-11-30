@@ -28,9 +28,7 @@ const AboutPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
         <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
-        <div
-          className="flex justify-center mb-10 gap-15 cursor-pointer"
-        >
+        <div className="flex justify-center mb-10 gap-15 cursor-pointer">
           <Image
             src="/blog_image.png"
             alt="berd"
@@ -46,14 +44,16 @@ const AboutPage = () => {
               Nationality: <span className="text-primary">Uzbekistan</span>
             </p>
             <p>
-              Current Residence: <span className="text-primary">Seoul, South Korea</span>
+              Current Residence: <span className="text-primary">Seoul Guro-gu, South Korea</span>
             </p>
             <p>
               Visa Type: <span className="text-primary">F-5 (Permanent Resident)</span>
             </p>
             <p>
               Foreign Languages:{" "}
-              <span className="text-primary">English, Korean, Russian, Uzbek</span>
+              <span className="text-primary">
+                English (fluent), Korean (fluent), Russian (fluent), Uzbek (native)
+              </span>
             </p>
             <p>
               Interests:{" "}
