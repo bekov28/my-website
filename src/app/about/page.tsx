@@ -28,7 +28,9 @@ const AboutPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
         <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
-        <div className="flex justify-center mb-10 gap-15 ">
+        <div
+          className="flex justify-center mb-10 gap-15 cursor-pointer"
+        >
           <Image
             src="/blog_image.png"
             alt="berd"
@@ -110,6 +112,7 @@ const AboutPage = () => {
               <li>Material UI</li>
               <li>Postman / Swiper</li>
               <li>Axios / Multer</li>
+              <li>Vite (Build tool)</li>
             </ul>
           </div>
         </div>
