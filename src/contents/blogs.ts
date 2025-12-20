@@ -10,7 +10,7 @@ export const blogs: Blog[] = [
   },
   {
     title: "30 JavaScript Projects",
-    excerpt: "30 Days, 30 JavaScript Mini Projects...",
+    excerpt: "I made 30 JavaScript Mini Projects in 30 Days",
     date: "2025-11-08",
     readTime: "7 min read",
     slug: "mini-projects",
