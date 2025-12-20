@@ -28,7 +28,7 @@ const AboutPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
         <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
-        <div className="flex justify-center md: flex-col items-center  mb-10 gap-15 cursor-pointer">
+        <div className="flex flex-col sm:flex-row justify-center items-center mb-10 gap-15 cursor-pointer">
           <Image
             src="/blog_image.png"
             alt="berd"
@@ -36,7 +36,7 @@ const AboutPage = () => {
             height={250}
             className="rounded-2xl"
           ></Image>
-          <div className="flex flex-col gap-3 ml-2">
+          <div className="gap-3 ml-2">
             <p>
               Name: <span className="text-primary">Berd</span>
             </p>
