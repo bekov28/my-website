@@ -88,8 +88,9 @@ const AboutPage = () => {
             <ul className="text-secondary space-y-2">
               <li>HTML5 / CSS3</li>
               <li>JavaScript / TypeScript</li>
-              <li>React.js / Next.js / Vue.js</li>
+              <li>Vue.js / React.js / Next.js/ Pinia</li>
               <li>Tailwind CSS / SCSS</li>
+              <li>jQuery</li>
             </ul>
           </div>
 
@@ -98,9 +99,10 @@ const AboutPage = () => {
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
               <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
+              <li>Express.js</li>
+              <li>MongoDB / SQLite (Node.js)</li>
               <li>JWT Auth</li>
+              <li>Java (basic)</li>
             </ul>
           </div>
 
