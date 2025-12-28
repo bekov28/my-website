@@ -86,10 +86,10 @@ const AboutPage = () => {
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
-              <li>HTML5 / CSS3</li>
+              <li>HTML5 / CSS3 /Tailwind CSS / SCSS</li>
               <li>JavaScript / TypeScript</li>
-              <li>Vue.js / React.js / Next.js/ Pinia</li>
-              <li>Tailwind CSS / SCSS</li>
+              <li>Vue.js / React.js / Next.js / Pinia</li>
+              <li>Styled Components</li>
               <li>jQuery</li>
             </ul>
           </div>
