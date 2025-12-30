@@ -98,11 +98,10 @@ const AboutPage = () => {
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
-              <li>Node.js</li>
-              <li>Express.js</li>
+              <li>Node.js / Express.js</li>
               <li>MongoDB / SQLite (Node.js)</li>
-              <li>JWT Auth</li>
-              <li>Java (basic)</li>
+              <li>JWT Auth / Bcrypt.js</li>
+              <li>Java / Spring Boot (basic)</li>
             </ul>
           </div>
 
@@ -126,7 +125,7 @@ const AboutPage = () => {
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
+            <h3 className="text-xl font-semibold mb-2">Front End Developer</h3>
             <p className="text-primary mb-2">coForward · 2025.03 ~ Present</p>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
@@ -150,10 +149,13 @@ const AboutPage = () => {
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">IT BootCamp Graduate</h3>
+            <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
             <p className="text-primary mb-2">BeCoder · 2024.06 - 2024.12</p>
             <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>Created user-friendly and responsive web applications using React.js</li>
+              <li>
+                Created user-friendly and responsive web applications using vanilla JavaScript,
+                React.js and React Router
+              </li>
               <li>
                 Integrated frontend and backend systems through APIs with Node.js using Express.js
                 (MERN Stack)
@@ -172,10 +174,27 @@ const AboutPage = () => {
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Master of Business Administration (MBA)</h3>
+            <h3 className="text-xl font-semibold mb-2">Full Stack Web Development BootCamp</h3>
+            <p className="text-primary mb-2">South Korea · 2024.06 - 2024.12</p>
+            <p className="text-secondary">
+              Full Stack Development with MERN Stack (MongoDB, Express, React, Node.js)
+            </p>
+          </div>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">
+              Master of Business Administration (MBA), South Korea
+            </h3>
             <p className="text-primary mb-2">Dongseo University · 2016.09 - 2018.08</p>
             <p className="text-secondary">
               Studied marketing, finance, international trade, economics and business
+            </p>
+          </div>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">B.A in Finance & Economics, Uzbekistan</h3>
+            <p className="text-primary mb-2">Tashkent Financial Institute · 2011.09 - 2015.08</p>
+            <p className="text-secondary">
+              Major in Finance, Banking, Economics / Minor in Information Technlogies and English
+              Language
             </p>
           </div>
         </div>
