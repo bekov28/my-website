@@ -36,7 +36,7 @@ const AboutPage = () => {
             height={250}
             className="rounded-2xl"
           ></Image>
-          <div className="gap-3 ml-2">
+          <div className="flex flex-col gap-2 ml-4">
             <p>
               Name: <span className="text-primary">Berd</span>
             </p>
@@ -70,9 +70,8 @@ const AboutPage = () => {
       {/* bio section */}
       <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with
-          overall 2 years of experience (of which 1 year is professional experience) in building
-          modern web applications. With a strong foundation in both{" "}
+          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5
+          years of experience in building modern web applications. With a strong foundation in both{" "}
           <span className="text-primary">frontend and backend</span> technologies, I create seamless
           user interfaces and robust server-side solutions.
         </p>
