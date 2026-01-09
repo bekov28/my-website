@@ -53,7 +53,7 @@ const ProjectPage = () => {
                 onClick={(e) => {
                   if (!project.githubLink) {
                     e.preventDefault();
-                    alert("Sorry, not sharable...");
+                    alert("Sorry, not sharable... (공개 제한)");
                   }
                 }}
               >
@@ -68,7 +68,7 @@ const ProjectPage = () => {
                 onClick={(e) => {
                   if (!project.demoLink) {
                     e.preventDefault();
-                    alert("Sorry, still under development...");
+                    alert("Sorry, still under development...(개발 중)");
                   }
                 }}
               >
