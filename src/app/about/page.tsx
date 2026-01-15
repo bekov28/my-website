@@ -101,6 +101,7 @@ const AboutPage = () => {
               <li>MongoDB / SQLite (Node.js)</li>
               <li>JWT Auth / Bcrypt.js</li>
               <li>Java / Spring Boot (basic)</li>
+              <li>Prisma ORM</li>
             </ul>
           </div>
 
