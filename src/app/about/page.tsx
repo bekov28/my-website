@@ -1,6 +1,6 @@
 "use client";
 
-import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
+import { FaCode, FaGraduationCap, FaLaptopCode, FaUserFriends } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { scaleIn } from "@/utils/animation";
@@ -71,9 +71,11 @@ const AboutPage = () => {
       <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
           I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5
-          years of experience in building modern web applications. With a strong foundation in both{" "}
-          <span className="text-primary">frontend and backend</span> technologies, I create seamless
-          user interfaces and robust server-side solutions.
+          years of experience in building modern web applications. I also have 5+ years of
+          experience in marketing/operations management in various South Korean fintech companies.
+          With a strong foundation in both <span className="text-primary">marketing and web</span>{" "}
+          technologies, I strive to create seamless user interfaces and robust server-side
+          solutions.
         </p>
       </motion.section>
 
@@ -114,6 +116,18 @@ const AboutPage = () => {
               <li>Postman / Swiper</li>
               <li>Axios / Multer</li>
               <li>Vite (Build tool)</li>
+            </ul>
+          </div>
+
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
+            <FaUserFriends className="h-8 w-8 text-primary mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Soft Skills</h3>
+            <ul className="text-secondary space-y-2">
+              <li>Problem Solving & Critical Thinking</li>
+              <li>Collaboration & Teamwork</li>
+              <li>Adaptability & Continuos Learning</li>
+              <li>Customer centric and business oriented</li>
+              <li>Time Management</li>
             </ul>
           </div>
         </div>
