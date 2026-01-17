@@ -82,7 +82,7 @@ const AboutPage = () => {
       {/* skills section */}
       <motion.section className="mb-16" {...scaleIn}>
         <h2 className="section-title">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
@@ -123,10 +123,10 @@ const AboutPage = () => {
             <FaUserFriends className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Soft Skills</h3>
             <ul className="text-secondary space-y-2">
-              <li>Problem Solving & Critical Thinking</li>
+              <li>Problem Solving</li>
               <li>Collaboration & Teamwork</li>
-              <li>Adaptability & Continuos Learning</li>
-              <li>Customer centric and business oriented</li>
+              <li>Continuos Learning</li>
+              <li>Adaptability</li>
               <li>Time Management</li>
             </ul>
           </div>
