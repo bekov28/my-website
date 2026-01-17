@@ -101,7 +101,7 @@ const AboutPage = () => {
               <li>MongoDB / SQLite (Node.js)</li>
               <li>JWT Auth / Bcrypt.js</li>
               <li>Java / Spring Boot (basic)</li>
-              <li>Prisma ORM</li>
+              <li>Prisma ORM / Docker</li>
             </ul>
           </div>
 
@@ -121,7 +121,7 @@ const AboutPage = () => {
 
       {/* experience section */}
       <section className="mb-16">
-        <h2 className="section-title">Experience</h2>
+        <h2 className="section-title">Work Experience</h2>
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
@@ -146,6 +146,51 @@ const AboutPage = () => {
                 in debugging and troubleshooting issues according the entire application stack
               </li>
             </ul>
+            <div className="flex gap-4">
+              {" "}
+              <Image
+                src="/tech_stack_img/visual_studio_code.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/sass.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/javascript.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/figma.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/vue_js.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/spring_boot.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+            </div>
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
@@ -162,6 +207,66 @@ const AboutPage = () => {
               </li>
               <li>
                 Worked with design tools, such as Figma and colloborated with other developers
+              </li>
+            </ul>
+            <div className="flex gap-4">
+              {" "}
+              <Image
+                src="/tech_stack_img/html.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/css.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/javascript.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/figma.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/react.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+              <Image
+                src="/tech_stack_img/node.png"
+                alt="visual"
+                width={40}
+                height={40}
+                className="rounded-2xl mt-4"
+              ></Image>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Marketing and Operations Manager</h3>
+            <p className="text-primary mb-2">SentBe · 2022.09 - 2025.01</p>
+            <ul className="text-secondary space-y-2 list-disc list-inside">
+              <li>
+                Promoted the company’s mobile application and executed marketing and business
+                strategies by conducting market research
+              </li>
+              <li>
+                Worked with Analytical tools aligning solutions to drive business and held online
+                meetings to share company updates
               </li>
             </ul>
           </div>
