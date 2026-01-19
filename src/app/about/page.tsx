@@ -71,9 +71,9 @@ const AboutPage = () => {
       <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
           I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5
-          years of experience in building modern web applications. I also have 5+ years of
-          experience in marketing/operations management in various South Korean fintech companies.
-          With a strong foundation in both <span className="text-primary">marketing and web</span>{" "}
+          years of experience in building modern web applications. I also have 6 years of experience
+          in marketing/operations management in various South Korean fintech companies. With a
+          strong foundation in both <span className="text-primary">marketing and web</span>{" "}
           technologies, I strive to create seamless user interfaces and robust server-side
           solutions.
         </p>
@@ -87,7 +87,7 @@ const AboutPage = () => {
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
-              <li>HTML5 / CSS3 /Tailwind CSS / SCSS</li>
+              <li>HTML / CSS / Tailwind / SCSS</li>
               <li>JavaScript / TypeScript</li>
               <li>Vue.js / React.js / Next.js / Pinia</li>
               <li>Styled Components</li>
@@ -140,7 +140,10 @@ const AboutPage = () => {
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Front End Developer</h3>
-            <p className="text-primary mb-2">coForward · 2025.03 ~ Present</p>
+            <div className="text-primary mb-2 flex justify-between">
+              <p>coForward · 2025.03 ~ Present</p>
+              <p>Seoul, South Korea</p>
+            </div>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
                 Built interactive and reusable user interface components with HTML5, CSS3, Vanilla
@@ -209,7 +212,10 @@ const AboutPage = () => {
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
-            <p className="text-primary mb-2">BeCoder · 2024.06 - 2024.12</p>
+            <div className="text-primary mb-2 flex justify-between">
+              <p>BeCoder · 2024.06 - 2024.12</p>
+              <p>South Korea</p>
+            </div>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
                 Created user-friendly and responsive web applications using vanilla JavaScript,
@@ -272,7 +278,29 @@ const AboutPage = () => {
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Marketing and Operations Manager</h3>
-            <p className="text-primary mb-2">SentBe · 2022.09 - 2025.01</p>
+            <div className="text-primary mb-2 flex justify-between">
+              <p>SentBe · 2022.09 - 2025.01 (2y 4months)</p>
+              <p>Seoul, South Korea</p>
+            </div>
+            <ul className="text-secondary space-y-2 list-disc list-inside">
+              <li>
+                Promoted the company’s business of overseas transfer service and executed marketing
+                and business strategies by conducting market research
+              </li>
+              <li>
+                Handled overseas transfer operations and regularly talked with software developers
+                and UX/UI designers to improve the web and mobile application of the company{" "}
+              </li>
+              <li>
+                Worked with Analytical tools aligning solutions to drive business and held online
+                meetings to share company updates
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Operations and Customer Support Manager</h3>
+            <p className="text-primary mb-2">GmoneyTrans · 2019.01 - 2022.08 (3y 8months)</p>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
                 Promoted the company’s mobile application and executed marketing and business
