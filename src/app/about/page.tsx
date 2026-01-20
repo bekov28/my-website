@@ -214,7 +214,7 @@ const AboutPage = () => {
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
             <div className="text-primary mb-2 flex justify-between">
               <p>BeCoder · 2024.06 - 2024.12</p>
-              <p>South Korea</p>
+              <p>South Korea (Remote)</p>
             </div>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
@@ -300,7 +300,10 @@ const AboutPage = () => {
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Operations and Customer Support Manager</h3>
-            <p className="text-primary mb-2">GmoneyTrans · 2019.01 - 2022.08 (3y 8months)</p>
+            <div className="text-primary mb-2 flex justify-between">
+              <p>GmoneyTrans · 2019.01 - 2022.08 (3y 8months)</p>
+              <p>Ansan, South Korea</p>
+            </div>
             <ul className="text-secondary space-y-2 list-disc list-inside">
               <li>
                 Promoted the company’s mobile application and executed marketing and business
