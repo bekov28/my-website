@@ -38,7 +38,10 @@ const AboutPage = () => {
           ></Image>
           <div className="flex flex-col gap-2 ml-4">
             <p>
-              Name: <span className="text-primary">Berd</span>
+              Full Name: <span className="text-primary">Berdiyor Orzikulov</span>
+            </p>
+            <p>
+              Nickname: <span className="text-primary">Berd (Korean: 버드)</span>
             </p>
             <p>
               Nationality: <span className="text-primary">Uzbekistan</span>
@@ -77,7 +80,7 @@ const AboutPage = () => {
           I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5
           years of experience in building modern web applications. I also have 6 years of experience
           in marketing/operations management in various South Korean fintech companies. With a
-          strong foundation in both <span className="text-primary">marketing and web</span>{" "}
+          strong foundation in both <span className="text-primary">marketing and IT</span>{" "}
           technologies, I strive to create seamless user interfaces and robust server-side
           solutions.
         </p>
