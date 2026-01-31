@@ -27,7 +27,7 @@ const AboutPage = () => {
   return (
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
-        <h1 className="text-4xl font-bold mb-8 text-center">Quick Info About Me</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Quick Info</h1>
         <div className="flex flex-col sm:flex-row justify-center items-center mb-10 gap-15 cursor-pointer">
           <Image
             src="/blog_image.png"
@@ -217,7 +217,7 @@ const AboutPage = () => {
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
             <div className="text-primary mb-2 flex justify-between">
-              <p>BeCoder · 2024.06 - 2024.12</p>
+              <p>BeCoder · 2024.06 - 2024.12 (6months)</p>
               <p>South Korea (Remote)</p>
             </div>
             <ul className="text-secondary space-y-2 list-disc list-inside">
