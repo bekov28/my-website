@@ -1,5 +1,5 @@
 "use client";
-import { projects } from "@/contents/projects";
+import { recentProjects } from "@/contents/recentProjects";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,10 +9,15 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-12 text-center">Check My Projects</h2>
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold">Check My Recent Projects</h1>
+        <p className="text-lg text-secondary mt-4">
+          For the full list of my projects, please kindly go to Projects section
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {recentProjects.map((project) => (
           <article
             key={project.title}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform duration-150 hover:scale-102 cursor-pointer "
