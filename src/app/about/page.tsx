@@ -27,7 +27,7 @@ const AboutPage = () => {
   return (
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
-        <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Quick Info About Me</h1>
         <div className="flex flex-col sm:flex-row justify-center items-center mb-10 gap-15 cursor-pointer">
           <Image
             src="/blog_image.png"
@@ -52,7 +52,7 @@ const AboutPage = () => {
             <p>
               Foreign Languages:{" "}
               <span className="text-primary">
-                English (fluent), Korean (fluent), Russian (fluent), Uzbek (native)
+                English (fluent), Korean (fluent), Russian (intermediate), Uzbek (native)
               </span>
             </p>
             <p>
@@ -62,6 +62,10 @@ const AboutPage = () => {
             <p>
               Hobby:
               <span className="text-primary"> Reading tech blogs, playing chess</span>
+            </p>
+            <p>
+              MBTI:
+              <span className="text-primary"> ESFJ (Extraverted, Sensing, Feeling, Judging)</span>
             </p>
           </div>
         </div>
