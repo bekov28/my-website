@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { pageTransition, slideInLeft, slideInRight } from "@/utils/animation";
 import React from "react";
 import emailjs from "@emailjs/browser";
+import Typed from "typed.js";
+import { useEffect } from "react";
 
 interface FormData {
   user_name: string;
@@ -16,6 +18,21 @@ interface FormData {
 type FormStatus = "idle" | "loading" | "success" | "error";
 
 const ContactPage = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Contact Me!"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  });
+
   const [formData, setFormData] = useState<FormData>({
     user_name: "",
     user_email: "",
@@ -90,7 +107,14 @@ const ContactPage = () => {
 
   return (
     <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
-      <h1 className="text-4xl font-bold mb-20 text-center">Contact Me</h1>
+      <div className="text-center mb-20 flex flex-col justify-center items-center">
+        <h1 className="text-4xl font-bold">
+          <span ref={el}></span>
+        </h1>
+        <p className="text-secondary md:w-2/3 mt-5">
+          Feel free to reach me out if you have amazing projects in mind!
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* contact info */}

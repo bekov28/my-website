@@ -8,9 +8,26 @@ import Image from "next/image";
 import { certificates } from "@/contents/certificates";
 import { useState } from "react";
 import { Certificate } from "@/types";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 //About page ~~
 const AboutPage = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["About Me..."],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  });
+
   const [selectedImage, setSelectedImage] = useState<Certificate | null>(null); //TypeScript Union type
   const [isModalOpen, setIsModalOpen] = useState(false); //changing the state using useState Hook
 
@@ -27,7 +44,9 @@ const AboutPage = () => {
   return (
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
-        <h1 className="text-4xl font-bold mb-8 text-center">Quick Info</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">
+          <span ref={el}></span>
+        </h1>
         <div className="flex flex-col sm:flex-row justify-center items-center mb-10 gap-15 cursor-pointer">
           <Image
             src="/blog_image.png"

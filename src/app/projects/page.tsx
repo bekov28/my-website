@@ -7,14 +7,45 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { sideProjects } from "@/contents/sideProjects";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 const ProjectPage = () => {
+  const team = useRef(null);
+  const side = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(team.current, {
+      strings: [
+        "Here are some of my recent projects in teams. Click on the links to view the code or live demo.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+    const typed2 = new Typed(side.current, {
+      strings: [
+        "Here is the list of some of my side projects where I explored new technologies, built and learnt along the way.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+      typed2.destroy();
+    };
+  });
+
   return (
     <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
       <h1 className="text-4xl font-bold mb-4 text-center">Team Projects</h1>
       <p className="text-lg text-secondary mb-16 text-center">
-        Here are some of my recent projects in teams. Click on the links to view the code or live
-        demo.
+        {" "}
+        <span ref={team}></span>
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,8 +114,8 @@ const ProjectPage = () => {
       </div>
       <h1 className="text-4xl font-bold mb-4 text-center mt-24">Side Projects</h1>
       <p className="text-lg text-secondary mb-16 text-center">
-        Here is the list of some of my side projects where I explored new technologies, built and
-        learnt along the way.
+        {" "}
+        <span ref={side}></span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {sideProjects.map((project) => (

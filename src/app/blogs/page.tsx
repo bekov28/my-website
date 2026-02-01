@@ -5,17 +5,36 @@ import Link from "next/link";
 import { FaCalendar, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { scaleIn } from "@/utils/animation";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 const BlogsPage = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Blogs Posts..."],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  });
+
   return (
     <section className="container max-w-7xl mx-auto py-20">
-      <h1 className="text-4xl font-bold mb-4 text-center">Blogs Posts</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">
+        <span ref={el}></span>
+      </h1>
 
       <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...scaleIn}>
         {blogs.map((blog) => (
           <article
             key={blog.slug}
-            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform hover:scale-102"
+            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform hover:scale-102 mt-12"
           >
             <Link href={`/blogs/${blog.slug}`} className="flex flex-col gap-4">
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">

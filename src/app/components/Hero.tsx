@@ -2,13 +2,33 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
-
 import { motion } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/utils/animation";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  // Create reference to store the DOM element containing the animation
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "and UX/UI Enthusiast",
+        "Glad to see you here!",
+      ],
+      typeSpeed: 50,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  });
 
   return (
     <section className="py-28 container max-w-7xl px-4">
@@ -27,21 +47,14 @@ const Hero = () => {
           />
         </motion.div>
 
-        <motion.div
-          {...fadeInUp}
-          transition={{ delay: 0.3 }}
-          className="text-4xl md:text-6xl font-bold mb-6"
-        >
+        <div className="text-4xl md:text-6xl font-bold mb-6">
           Hi, I&apos;m <span className="text-primary">Berd</span>
-        </motion.div>
+        </div>
 
-        <motion.div
-          {...fadeInUp}
-          transition={{ delay: 0.5 }}
-          className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
-        >
-          Full Stack Developer | UI/UX Enthusiast | Business Analyst
-        </motion.div>
+        <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+          {" "}
+          <span ref={el}></span>
+        </div>
 
         <motion.div
           className="flex justify-center space-x-4 mb-8"
