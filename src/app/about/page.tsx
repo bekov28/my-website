@@ -10,7 +10,6 @@ import { useState } from "react";
 import { Certificate } from "@/types";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-
 //About page ~~
 const AboutPage = () => {
   const el = useRef(null);
