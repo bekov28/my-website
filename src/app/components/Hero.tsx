@@ -16,7 +16,7 @@ const Hero = () => {
       strings: [
         "Full Stack Developer",
         "Web Developer",
-        "and UX/UI Enthusiast",
+        "and Customer Solutions Manager",
         "Glad to see you here!",
       ],
       typeSpeed: 50,
