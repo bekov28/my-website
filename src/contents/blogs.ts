@@ -8,11 +8,4 @@ export const blogs: Blog[] = [
     readTime: "3 min read",
     slug: "about-me",
   },
-  {
-    title: "30 JavaScript Projects",
-    excerpt: "I made 30 JavaScript Mini Projects in 30 Days",
-    date: "2025-11-08",
-    readTime: "7 min read",
-    slug: "mini-projects",
-  },
 ];
