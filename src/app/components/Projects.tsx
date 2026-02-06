@@ -75,7 +75,7 @@ const Projects = () => {
                 }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
-                <span>Live Demo</span>
+                <span>Link</span>
               </Link>
             </div>
           </article>

@@ -16,7 +16,7 @@ const ProjectPage = () => {
   useEffect(() => {
     const typed = new Typed(team.current, {
       strings: [
-        "Here are some of my recent projects in teams. Click on the links to view the code or live demo.",
+        "Here are some of my recent projects in teams. Click on the links to see the projects lively.",
       ],
       typeSpeed: 50,
       backSpeed: 100,
@@ -106,7 +106,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
-                <span>Live Demo</span>
+                <span>Link</span>
               </Link>
             </div>
           </article>
@@ -175,7 +175,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
-                <span>Live Demo</span>
+                <span>Link</span>
               </Link>
             </div>
           </article>

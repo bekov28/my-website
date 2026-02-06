@@ -2,7 +2,7 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "[Team Work] Shinhan Bank Foreign Exchange Trading Platform [2025.06 ~ Present]",
+    title: "[Team Work] Shinhan Bank Foreign Exchange Trading Platform [2025.06 - 2026.02]",
     description: `This Web-only Trading Platform of Shinhan Bank enables customers to register an account and start exchanging varius types of SWAP operations and other trading operations.`,
     technologies: ["Vue.js", "Java", "Spring-boot", "Maven"],
     githubLink: "",
@@ -13,7 +13,7 @@ export const projects: Project[] = [
   },
   {
     title:
-      "[Team Work] Eugene Securities US Stock Options Trading Platform (Web/Mobile) [2025.03 ~ 2025.05]",
+      "[Team Work] Eugene Securities US Stock Options Trading Platform (Web/Mobile) [2025.03 - 2025.05]",
     description: `This mobile trading application allows Korean customers to trade US stocks and options through long and short spreads and customers can also open an account for trading.`,
     technologies: ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
     githubLink: "",
