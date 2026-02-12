@@ -99,7 +99,7 @@ const AboutPage = () => {
           years of experience in building modern web applications. I also have 6 years of experience
           in marketing/operations and customer solutions management in various South Korean fintech
           companies. With a strong foundation in both{" "}
-          <span className="text-primary">marketing and IT</span> technologies, I strive to create
+          <span className="text-primary">Marketing and IT</span> technologies, I strive to create
           seamless user interfaces and robust server-side solutions.
         </p>
       </motion.section>
@@ -141,6 +141,7 @@ const AboutPage = () => {
               <li>Postman / Swiper</li>
               <li>Axios / Multer</li>
               <li>Vite (Build tool)</li>
+              <li>Slack / Jira / Confluence</li>
             </ul>
           </div>
 
