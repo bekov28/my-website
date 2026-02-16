@@ -10,6 +10,7 @@ export const sideProjects: Project[] = [
     demoLink: "https://jobs-website-vue.netlify.app/",
     image: "/projects/vue.png",
     role: "",
+    tasks: [],
     period: "",
   },
   {
@@ -20,6 +21,7 @@ export const sideProjects: Project[] = [
     demoLink: "https://graniteshop-29e1a.web.app/",
     image: "/projects/stone-website.png",
     role: "",
+    tasks: [],
     period: "",
   },
   {
@@ -32,6 +34,7 @@ export const sideProjects: Project[] = [
     demoLink: "https://campertestsite.netlify.app/",
     image: "/projects/camper.png",
     role: "",
+    tasks: [],
     period: "",
   },
 ];
