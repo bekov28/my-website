@@ -95,7 +95,7 @@ const AboutPage = () => {
       {/* bio section */}
       <motion.section className="mb-16" {...scaleIn}>
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5
+          I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 1.5+
           years of experience in building modern web applications. I also have 6 years of experience
           in marketing/operations and customer solutions management in various South Korean fintech
           companies. With a strong foundation in both{" "}
