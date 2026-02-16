@@ -7,6 +7,7 @@ export interface Project {
   demoLink: string;
   image: string;
   role: string;
+  tasks: string[];
   period: string;
 }
 

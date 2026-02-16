@@ -3,12 +3,19 @@ import { Project } from "@/types";
 export const recentProjects: Project[] = [
   {
     title: "[Team Work] Shinhan Bank Foreign Exchange Trading Platform (Web Project)",
-    description: `This Web-only Trading Platform of Shinhan Bank enables customers to register an account and start exchanging varius types of SWAP operations and other trading operations.`,
+    description: `Foreign Exchange Trading Platform for Shinhan Bank that enables customers to register an account and start making transactions through varius types of Swap and Forward operations.`,
     technologies: ["Vue.js", "Java", "Spring-boot", "Maven"],
     githubLink: "",
     demoLink: "https://efx.shinhan.com/",
     image: "/projects/shinhan.png",
-    role: "Role: Front-end developer, worked on the UI/UX part, added JS logic and integrated multiple APIs, implemented the front-end components of Account Widget, Service Information, Swap Point Rate",
+    role: "[Front-end developer] - 15% Contribution Rate",
+    tasks: [
+      "Developed reusable UI components for web trade application using JavaScript, Vue.js and Vite, reducing frontend development time for new features by 30%",
+      "Translated Figma designs into functional codes",
+      "Integrated RESTful APIs and managed state by Pinia to provide seemless data flow",
+      "Managed version control using Git/GitLab",
+      "Collaborated with Backend Engineers to define API contracts and data structures, ensuring full stack integration",
+    ],
     period: "[2025.06 - 2026.02]",
   },
   {
@@ -18,18 +25,22 @@ export const recentProjects: Project[] = [
     githubLink: "",
     demoLink: "https://www.eugenefutures.com/OptionsHub/index.html",
     image: "/projects/yujin.png",
-    role: "Role: Front-end developer for UI/UX (contribution rate: 10%) with other 3 front-end developers in the small team. Collaborated with other senior developers and the design team to refine project requirements and fixed bugs.",
+    role: "[Front-end developer] - 10% Contribution Rate",
+    tasks: [
+      "Collaborated with other senior developers and the design team to refine project requirements",
+      "Refactored the existent code base and fixed bugs",
+    ],
     period: "[2025.03 - 2025.06.15]",
   },
   {
     title: "Job Searching Platform for Vue.js Developers (Web Project)",
-    description: `This website is aimed for Web developers to find developer jobs, 
-        especially Vue jobs and for employers to hire web developers. JSON Web Server was used for backend, so actual job contents can not be browsed in the demo version.`,
+    description: `This website is aimed for Web developers to find Vue.js jobs and for employers to hire web developers. JSON Web Server was used for backend, so actual job contents can not be browsed in the demo version.`,
     technologies: ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
     githubLink: "https://github.com/bekov28/jobs-website-vue",
     demoLink: "https://jobs-website-vue.netlify.app/",
     image: "/projects/vue.png",
-    role: "",
+    role: "[Full Stack Developer]",
+    tasks: [],
     period: "[2025.06]",
   },
 ];
