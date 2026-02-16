@@ -64,8 +64,10 @@ const ProjectPage = () => {
               />
             </div>
 
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+            <h3 className="text-xl font-semibold mb-2 text-justify">{project.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify mt-4">
+              {project.description}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
@@ -134,7 +136,9 @@ const ProjectPage = () => {
             </div>
 
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify mt-4">
+              {project.description}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
