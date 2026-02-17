@@ -32,16 +32,14 @@ const Projects = () => {
               />
             </div>
 
-            <h3 className="text-xl font-semibold mb-2 ">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify mt-4 italic">
               {project.description}
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">{project.role}</p>
-            <ul className="text-gray-600 dark:text-gray-300 mb-4 mt-4 text-justify">
+            <ul className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
               {project.tasks.map((task) => (
-                <li key={task} className="mb-2">
-                  - {task}
-                </li>
+                <li key={task}>- {task}</li>
               ))}
             </ul>
             <p className="text-gray-600 dark:text-gray-300 mb-4">{project.period}</p>
