@@ -50,8 +50,8 @@ const AboutPage = () => {
           <Image
             src="/blog_image.png"
             alt="berd"
-            width={300}
-            height={250}
+            width={400}
+            height={400}
             className="rounded-2xl"
           ></Image>
           <div className="flex flex-col gap-2 ml-4">
@@ -65,10 +65,17 @@ const AboutPage = () => {
               Nationality: <span className="text-primary">Uzbekistan</span>
             </p>
             <p>
-              Current Residence: <span className="text-primary">Seoul Guro-gu, South Korea</span>
+              Profession:{" "}
+              <span className="text-primary">Full Stack Developer | Frontend engineer</span>
             </p>
             <p>
-              Visa Type: <span className="text-primary">F-5 (Permanent Resident)</span>
+              Current Residence: <span className="text-primary">Seoul, South Korea</span>
+            </p>
+            <p>
+              Visa Type:{" "}
+              <span className="text-primary">
+                F-5 (Permanent Resident) [No visa support required]
+              </span>
             </p>
             <p>
               Foreign Languages:{" "}
