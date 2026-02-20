@@ -26,3 +26,11 @@ export interface Certificate {
   details: string[];
   image: string;
 }
+
+export interface TechStack {
+  position: string;
+  period: string;
+  location: string;
+  tasks: string[];
+  stack: string[];
+}

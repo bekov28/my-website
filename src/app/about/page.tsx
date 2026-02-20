@@ -10,6 +10,7 @@ import { useState } from "react";
 import { Certificate } from "@/types";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import { techStack } from "@/contents/techStack";
 //About page ~~
 const AboutPage = () => {
   const el = useRef(null);
@@ -171,143 +172,30 @@ const AboutPage = () => {
         <h2 className="section-title">Work Experience</h2>
 
         <div className="max-w-3xl mx-auto space-y-8">
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Front End Developer</h3>
-            <div className="text-primary mb-2 flex justify-between">
-              <p>coForward · 2025.03 ~ Present</p>
-              <p>Seoul, South Korea</p>
+          {techStack.map((position) => (
+            <div
+              key={position.position}
+              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            >
+              <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
+              <div className="text-primary mb-2 flex justify-between">
+                <p>{position.period}</p>
+                <p>{position.location}</p>
+              </div>
+              <ul className="text-secondary space-y-2 list-disc list-inside">
+                {position.tasks.map((task) => (
+                  <li key={task}>{task}</li>
+                ))}
+              </ul>
+              <div className="flex gap-4">
+                {position.stack.map((tech) => (
+                  <span key={tech} className="px-3 mt-3 bg-primary/10 text-primary rounded-full">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
-            <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>
-                Built interactive and reusable user interface components with HTML5, CSS3, Vanilla
-                JS and Vue.js
-              </li>
-              <li>
-                Developed and designed the finance and trade web platform using JavaScript (ES6+)
-                and implemented server-side functionality using Java, contributing to the
-                development of RESTful APIs for front-end
-              </li>
-              <li>
-                Collaborated with senior developers and designers to translate UI/UX wireframes into
-                functional code
-              </li>
-              <li>
-                Utilized version control with Git/GitLab for code management and gained experience
-                in debugging and troubleshooting issues according the entire application stack
-              </li>
-            </ul>
-            <div className="flex gap-4">
-              {" "}
-              <Image
-                src="/tech_stack_img/visual_studio_code.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/sass.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/javascript.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/figma.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/vue_js.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/spring_boot.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Full Stack Developer Intern</h3>
-            <div className="text-primary mb-2 flex justify-between">
-              <p>BeCoder · 2024.06 - 2024.12 (6months)</p>
-              <p>South Korea (Remote)</p>
-            </div>
-            <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>
-                Created user-friendly and responsive web applications using vanilla JavaScript,
-                React.js and React Router
-              </li>
-              <li>
-                Integrated frontend and backend systems through APIs with Node.js using Express.js
-                (MERN Stack)
-              </li>
-              <li>
-                Worked with design tools, such as Figma and colloborated with other developers
-              </li>
-            </ul>
-            <div className="flex gap-4">
-              {" "}
-              <Image
-                src="/tech_stack_img/html.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/css.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/javascript.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/figma.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/react.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-              <Image
-                src="/tech_stack_img/node.png"
-                alt="visual"
-                width={40}
-                height={40}
-                className="rounded-2xl mt-4"
-              ></Image>
-            </div>
-          </div>
+          ))}
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Marketing and Operations Manager</h3>
