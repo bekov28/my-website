@@ -25,4 +25,29 @@ export const techStack: TechStack[] = [
     ],
     stack: ["HTML", "CSS", "JavaScript", "Figma", "React", "Node.js", "TypeScript"],
   },
+  {
+    position: "Marketing and Operations Manager (Client Service Team)",
+    period: "SentBe · 2022.09 - 2025.01 (2y 4months)",
+    location: "Seoul, South Korea",
+    tasks: [
+      "Handled overseas transfer operations and regularly talked with software developers and UX/UI designers to improve the web and mobile application of the company",
+      "Outlined customer support measurement solutions and achieved country-wise KPI of 150% for 2 years consecutively",
+      "Promoted the company’s mobile application and overseas remittance service by running multiple SNS channels resulting in 250% increase in new customer acquisition within first 6 months",
+      "Worked with Analytical tools aligning solutions to drive business and held sessions to share news and further company plans",
+      "Provided customer support for 100+ Korean and Foreign clients’ inquiries weekly",
+    ],
+    stack: ["Jira", "Confluence", "Digital Marketing", "FreshCaller", "FreshDesk", "Slack"],
+  },
+  {
+    position: "Operations and Customer Support Manager",
+    period: "GmoneyTrans · 2019.01 - 2022.08 (3y 8months)",
+    location: "Ansan, South Korea",
+    tasks: [
+      "Promoted the company’s mobile application, frequently talked with Mobile Developers and UI/UX Designers to improve the mobile service",
+      "Managed online and offline overseas remittance transactions to over 50 countries and resolved compliance-related operations",
+      "Led Ansan branch team with over 10 foreign nationalities and managed Youtube and other SNS accounts, resulting in 60% increase in social channel memberships",
+      "Worked with Analytical tools aligning solutions to drive business and held online meetings to share company updates",
+    ],
+    stack: ["Groupware", "Slack", "Client Service", "Account Management", "Product Marketing"],
+  },
 ];

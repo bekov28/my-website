@@ -196,46 +196,6 @@ const AboutPage = () => {
               </div>
             </div>
           ))}
-
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Marketing and Operations Manager</h3>
-            <div className="text-primary mb-2 flex justify-between">
-              <p>SentBe · 2022.09 - 2025.01 (2y 4months)</p>
-              <p>Seoul, South Korea</p>
-            </div>
-            <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>
-                Promoted the company’s business of overseas transfer service and executed marketing
-                and business strategies by conducting market research
-              </li>
-              <li>
-                Handled overseas transfer operations and regularly talked with software developers
-                and UX/UI designers to improve the web and mobile application of the company{" "}
-              </li>
-              <li>
-                Worked with Analytical tools aligning solutions to drive business and held online
-                meetings to share company updates
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Operations and Customer Support Manager</h3>
-            <div className="text-primary mb-2 flex justify-between">
-              <p>GmoneyTrans · 2019.01 - 2022.08 (3y 8months)</p>
-              <p>Ansan, South Korea</p>
-            </div>
-            <ul className="text-secondary space-y-2 list-disc list-inside">
-              <li>
-                Promoted the company’s mobile application and executed marketing and business
-                strategies by conducting market research
-              </li>
-              <li>
-                Worked with Analytical tools aligning solutions to drive business and held online
-                meetings to share company updates
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
 
