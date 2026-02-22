@@ -12,7 +12,7 @@ const BlogsPage = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Blogs Posts..."],
+      strings: ["Welcome to my blog..."],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,

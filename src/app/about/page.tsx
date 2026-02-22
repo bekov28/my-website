@@ -105,7 +105,7 @@ const AboutPage = () => {
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
           I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 2+
           years of experience in building modern web applications. I also have 6 years of experience
-          in marketing/operations and customer solutions management in various South Korean fintech
+          in Marketing/Operations and Customer Solutions Management in various South Korean fintech
           companies. With a strong foundation in both{" "}
           <span className="text-primary">Marketing and IT</span> technologies, I strive to create
           seamless user interfaces and robust server-side solutions.
@@ -171,11 +171,11 @@ const AboutPage = () => {
       <section className="mb-16">
         <h2 className="section-title">Work Experience</h2>
 
-        <div className="w-full space-y-8">
+        <div className="max-w-3xl mx-auto space-y-8">
           {techStack.map((position) => (
             <div
               key={position.position}
-              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md flex flex-col lg:flex-row gap-10 w-full min-h-48 lg:min-h-0"
+              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             >
               <div>
                 <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
