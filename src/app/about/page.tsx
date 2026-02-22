@@ -245,7 +245,7 @@ const AboutPage = () => {
             >
               <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
               <p className="text-primary mb-2">{certificate.period}</p>
-              <p className="text-secondary">{certificate.description}</p>
+              <p className="text-purple-400 italic">{certificate.description}</p>
               <ul className="text-secondary space-y-2 list-disc list-inside">
                 <li>{certificate.details[0]}</li>
                 <li>{certificate.details[1]}</li>

@@ -31,10 +31,8 @@ export const techStack: TechStack[] = [
     location: "Seoul, South Korea",
     tasks: [
       "Handled overseas transfer operations and regularly talked with software developers and UX/UI designers to improve the web and mobile application of the company",
-      "Outlined customer support measurement solutions and achieved country-wise KPI of 150% for 2 years consecutively",
-      "Promoted the company’s mobile application and overseas remittance service by running multiple SNS channels resulting in 250% increase in new customer acquisition within first 6 months",
-      "Worked with Analytical tools aligning solutions to drive business and held sessions to share news and further company plans",
-      "Provided customer support for 100+ Korean and Foreign clients’ inquiries weekly",
+      "Leveraged analytical tools and social platform integrations to scale user acquisition by 250% in 6 months, bridging the gap between digital marketing strategy and mobile app performance",
+      "Managed technical support and client relations in 4 languages (English, Uzbek, Russian and Korean) for a diverse global portfolio of 100+ weekly accounts, diagnosing complex user issues to improve software reliability and customer satisfaction",
     ],
     stack: ["Jira", "Confluence", "Notion", "FreshCaller", "FreshDesk", "Slack"],
   },
@@ -43,7 +41,7 @@ export const techStack: TechStack[] = [
     period: "GmoneyTrans · 2019.01 - 2022.08 (3y 8months)",
     location: "Ansan, South Korea",
     tasks: [
-      "Promoted the company’s mobile application, frequently talked with Mobile Developers and UI/UX Designers to improve the mobile service",
+      "Promoted the company’s mobile application, often collaborated with Mobile Developers and UI/UX Designers to improve the mobile service",
       "Managed online and offline overseas remittance transactions to over 50 countries and resolved compliance-related operations",
       "Led Ansan branch team with over 10 foreign nationalities and managed Youtube and other SNS accounts, resulting in 60% increase in social channel memberships",
       "Worked with Analytical tools aligning solutions to drive business and held online meetings to share company updates",
