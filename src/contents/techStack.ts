@@ -11,19 +11,21 @@ export const techStack: TechStack[] = [
       "Collaborated with senior developers and designers to translate UI/UX wireframes into functional code",
       "Utilized version control with Git/GitLab for code management and gained experience in debugging and troubleshooting issues according the entire application stack",
     ],
-    stack: ["Visual Studio", "SASS", "JavaScript", "Figma", "Vue.js", "Spring-Boot"],
+    stack: ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD", ""],
+    image: "",
   },
   {
     position: "Full Stack Developer Intern",
     period: "BeCoder · 2024.06 - 2024.12 (6months)",
     location: "South Korea (Remote)",
     tasks: [
-      "Created user-friendly and responsive web applications using JavaScript, React.js and React Router",
+      "Created user-friendly and responsive web applications using JavaScript, React.js, TypeScript, MongoDB and Express.js",
       "Integrated frontend and backend systems through APIs with Node.js using Express.js (MERN Stack)",
       "Worked with design tools, such as Figma and colloborated with other developers",
       "Collaboration and version management with Git and Github, project deployment",
     ],
     stack: ["HTML", "CSS", "JavaScript", "Figma", "React", "Node.js", "TypeScript"],
+    image: "",
   },
   {
     position: "Marketing and Operations Manager (Client Service Team)",
@@ -36,7 +38,8 @@ export const techStack: TechStack[] = [
       "Worked with Analytical tools aligning solutions to drive business and held sessions to share news and further company plans",
       "Provided customer support for 100+ Korean and Foreign clients’ inquiries weekly",
     ],
-    stack: ["Jira", "Confluence", "Digital Marketing", "FreshCaller", "FreshDesk", "Slack"],
+    stack: ["Jira", "Confluence", "Notion", "FreshCaller", "FreshDesk", "Slack"],
+    image: "/job_image/sentbe.jpg",
   },
   {
     position: "Operations and Customer Support Manager",
@@ -48,6 +51,7 @@ export const techStack: TechStack[] = [
       "Led Ansan branch team with over 10 foreign nationalities and managed Youtube and other SNS accounts, resulting in 60% increase in social channel memberships",
       "Worked with Analytical tools aligning solutions to drive business and held online meetings to share company updates",
     ],
-    stack: ["Groupware", "Slack", "Client Service", "Account Management", "Product Marketing"],
+    stack: ["Groupware", "Slack", "Skype", "Analytics", "SNS", "Marketing"],
+    image: "/job_image/gmoney.jpg",
   },
 ];

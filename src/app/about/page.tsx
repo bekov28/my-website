@@ -171,28 +171,44 @@ const AboutPage = () => {
       <section className="mb-16">
         <h2 className="section-title">Work Experience</h2>
 
-        <div className="max-w-3xl mx-auto space-y-8">
+        <div className="w-full space-y-8">
           {techStack.map((position) => (
             <div
               key={position.position}
-              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md flex flex-col lg:flex-row gap-10 w-full min-h-48 lg:min-h-0"
             >
-              <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
-              <div className="text-primary mb-2 flex justify-between">
-                <p>{position.period}</p>
-                <p>{position.location}</p>
+              <div className="relative aspect-video mb-4 rounded-lg overflow-hidden w-72 shrink-0 hidden lg:block">
+                {position.image ? (
+                  <Image
+                    src={position.image}
+                    alt={position.position}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width:400px) 100vw, (max-width:500px) 50vw, 33vw"
+                    loading="eager"
+                  />
+                ) : (
+                  <div className="bg-gray-200 fill" /> // Fallback placeholder div
+                )}
               </div>
-              <ul className="text-secondary space-y-2 list-disc list-inside">
-                {position.tasks.map((task) => (
-                  <li key={task}>{task}</li>
-                ))}
-              </ul>
-              <div className="flex gap-4">
-                {position.stack.map((tech) => (
-                  <span key={tech} className="px-3 mt-3 bg-primary/10 text-primary rounded-full">
-                    {tech}
-                  </span>
-                ))}
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
+                <div className="text-primary mb-2 flex justify-between gap-4">
+                  <p>{position.period}</p>
+                  <p>{position.location}</p>
+                </div>
+                <ul className="text-secondary space-y-2 list-disc list-inside">
+                  {position.tasks.map((task) => (
+                    <li key={task}>{task}</li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-4">
+                  {position.stack.map((tech) => (
+                    <span key={tech} className="px-3 mt-3 bg-primary/10 text-primary rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

@@ -33,4 +33,5 @@ export interface TechStack {
   location: string;
   tasks: string[];
   stack: string[];
+  image: string;
 }
