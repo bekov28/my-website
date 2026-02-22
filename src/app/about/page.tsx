@@ -177,20 +177,6 @@ const AboutPage = () => {
               key={position.position}
               className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md flex flex-col lg:flex-row gap-10 w-full min-h-48 lg:min-h-0"
             >
-              <div className="relative aspect-video mb-4 rounded-lg overflow-hidden w-72 shrink-0 hidden lg:block">
-                {position.image ? (
-                  <Image
-                    src={position.image}
-                    alt={position.position}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width:400px) 100vw, (max-width:500px) 50vw, 33vw"
-                    loading="eager"
-                  />
-                ) : (
-                  <div className="bg-gray-200 fill" /> // Fallback placeholder div
-                )}
-              </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
                 <div className="text-primary mb-2 flex justify-between gap-4">

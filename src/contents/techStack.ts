@@ -12,7 +12,6 @@ export const techStack: TechStack[] = [
       "Utilized version control with Git/GitLab for code management and gained experience in debugging and troubleshooting issues according the entire application stack",
     ],
     stack: ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD", ""],
-    image: "",
   },
   {
     position: "Full Stack Developer Intern",
@@ -25,7 +24,6 @@ export const techStack: TechStack[] = [
       "Collaboration and version management with Git and Github, project deployment",
     ],
     stack: ["HTML", "CSS", "JavaScript", "Figma", "React", "Node.js", "TypeScript"],
-    image: "",
   },
   {
     position: "Marketing and Operations Manager (Client Service Team)",
@@ -39,7 +37,6 @@ export const techStack: TechStack[] = [
       "Provided customer support for 100+ Korean and Foreign clients’ inquiries weekly",
     ],
     stack: ["Jira", "Confluence", "Notion", "FreshCaller", "FreshDesk", "Slack"],
-    image: "/job_image/sentbe.jpg",
   },
   {
     position: "Operations and Customer Support Manager",
@@ -52,6 +49,5 @@ export const techStack: TechStack[] = [
       "Worked with Analytical tools aligning solutions to drive business and held online meetings to share company updates",
     ],
     stack: ["Groupware", "Slack", "Skype", "Analytics", "SNS", "Marketing"],
-    image: "/job_image/gmoney.jpg",
   },
 ];
