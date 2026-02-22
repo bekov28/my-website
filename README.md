@@ -39,6 +39,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - TurboPack - an incremental bundler optimized for JavaScript and TypeScript, provides faster development
 - Framer Motion - an open source animation library for React
 - HeroIcons - special React-based icons by the Tailwind CSS creators
+- react-icons.github.io - another cool website for React icons
 - Typed.js for text typing animations
 
 ## Deploy on Vercel

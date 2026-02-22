@@ -2,7 +2,7 @@ import { TechStack } from "@/types";
 
 export const techStack: TechStack[] = [
   {
-    position: "Web Front End Developer",
+    position: "Front End Developer",
     period: "coForward · 2025.03 ~ Present",
     location: "Seoul, South Korea",
     tasks: [
@@ -11,7 +11,7 @@ export const techStack: TechStack[] = [
       "Collaborated with senior developers and designers to translate UI/UX wireframes into functional code",
       "Utilized version control with Git/GitLab for code management and gained experience in debugging and troubleshooting issues according the entire application stack",
     ],
-    stack: ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD", ""],
+    stack: ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD"],
   },
   {
     position: "Full Stack Developer Intern",

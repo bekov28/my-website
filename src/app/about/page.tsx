@@ -11,6 +11,10 @@ import { Certificate } from "@/types";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { techStack } from "@/contents/techStack";
+import { IoLocationOutline } from "react-icons/io5";
+import { BsTools } from "react-icons/bs";
+import { GiDiploma } from "react-icons/gi";
+
 //About page ~~
 const AboutPage = () => {
   const el = useRef(null);
@@ -115,54 +119,146 @@ const AboutPage = () => {
       {/* skills section */}
       <motion.section className="mb-16" {...scaleIn}>
         <h2 className="section-title">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center items-center">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
-            <FaCode className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Frontend</h3>
-            <ul className="text-secondary space-y-2">
-              <li>HTML / CSS / Tailwind / SCSS</li>
-              <li>JavaScript / TypeScript</li>
-              <li>Vue.js / React.js / Next.js / Pinia</li>
-              <li>Styled Components</li>
-              <li>jQuery</li>
-            </ul>
+            <div className="flex gap-3 justify-center items-center">
+              <FaCode className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                HTML
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                CSS
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Tailwind
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                SCSS
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                JavaScript
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                TypeScript
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Vue.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Pinia
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                React.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Next.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                jQuery
+              </span>
+            </div>
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
-            <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Backend</h3>
-            <ul className="text-secondary space-y-2">
-              <li>Node.js / Express.js</li>
-              <li>MongoDB / SQLite (Node.js)</li>
-              <li>JWT Auth / Bcrypt.js</li>
-              <li>Java / Spring Boot (basic)</li>
-              <li>Prisma ORM / Docker</li>
-            </ul>
+            <div className="flex gap-3 justify-center items-center">
+              <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Backend</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Node.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Express.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                MongoDB
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                SQLite
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                JWT Auth
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Bcrypt.js
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Java (Spring-Boot)
+              </span>
+            </div>
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
-            <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
-            <ul className="text-secondary space-y-2">
-              <li>Git / GitHub / GitLab</li>
-              <li>Material UI</li>
-              <li>Postman / Swiper</li>
-              <li>Axios / Multer</li>
-              <li>Vite (Build tool)</li>
-              <li>Slack / Jira / Confluence</li>
-            </ul>
+            <div className="flex gap-3 justify-center items-center">
+              <BsTools className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Tools & DevOps</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Git
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                GitHub
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                GitLab
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Material UI
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Postman
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Swiper
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Vite (build tool)
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Slack
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Firebase
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Prisma (ORM)
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Docker
+              </span>
+            </div>
           </div>
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
-            <FaUserFriends className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Soft Skills</h3>
-            <ul className="text-secondary space-y-2">
-              <li>Problem Solving</li>
-              <li>Collaboration & Teamwork</li>
-              <li>Continuos Learning</li>
-              <li>Adaptability</li>
-              <li>Time Management</li>
-            </ul>
+            <div className="flex gap-3 justify-center items-center">
+              <FaUserFriends className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Soft Skills</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Problem Solving
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Teamwork
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Continuos Learning
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Adaptability
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Time Management
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Smooth Communication
+              </span>
+            </div>
           </div>
         </div>
       </motion.section>
@@ -181,16 +277,22 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold mb-2">{position.position}</h3>
                 <div className="text-primary mb-2 flex justify-between gap-4">
                   <p>{position.period}</p>
-                  <p>{position.location}</p>
+                  <div className="flex gap-1 justify-center items-center">
+                    <IoLocationOutline />
+                    <span>{position.location}</span>
+                  </div>
                 </div>
                 <ul className="text-secondary space-y-2 list-disc list-inside">
                   {position.tasks.map((task) => (
                     <li key={task}>{task}</li>
                   ))}
                 </ul>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 mt-2">
                   {position.stack.map((tech) => (
-                    <span key={tech} className="px-3 mt-3 bg-primary/10 text-primary rounded-full">
+                    <span
+                      key={tech}
+                      className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30"
+                    >
                       {tech}
                     </span>
                   ))}
@@ -207,23 +309,32 @@ const AboutPage = () => {
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Full Stack Web Development BootCamp</h3>
+            <div className="flex gap-2 mb-2">
+              <GiDiploma className="h-10 w-10 text-primary" />
+              <h3 className="text-xl font-semibold mt-2">Full Stack Web Development BootCamp</h3>
+            </div>
             <p className="text-primary mb-2">South Korea · 2024.06 - 2024.12</p>
             <p className="text-secondary">
               Full Stack Development with MERN Stack (MongoDB, Express, React, Node.js)
             </p>
           </div>
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">
-              Master of Business Administration (MBA), South Korea
-            </h3>
+            <div className="flex gap-2 mb-2">
+              <FaGraduationCap className="h-10 w-10 text-primary" />
+              <h3 className="text-xl font-semibold mt-2">
+                Master of Business Administration (MBA), South Korea
+              </h3>
+            </div>
             <p className="text-primary mb-2">Dongseo University · 2016.09 - 2018.08</p>
             <p className="text-secondary">
               Studied marketing, finance, international trade, economics and business
             </p>
           </div>
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">B.A in Finance & Economics, Uzbekistan</h3>
+            <div className="flex gap-2 mb-2">
+              <FaGraduationCap className="h-10 w-10 text-primary" />
+              <h3 className="text-xl font-semibold mt-2">B.A in Finance & Economics, Uzbekistan</h3>
+            </div>
             <p className="text-primary mb-2">Tashkent Financial Institute · 2011.09 - 2015.08</p>
             <p className="text-secondary">
               Major in Finance, Banking, Economics / Minor in Information Technlogies and English
@@ -241,7 +352,7 @@ const AboutPage = () => {
           {certificates.map((certificate) => (
             <div
               key={certificate.title}
-              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+              className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md transition-transform duration-150 hover:scale-102"
             >
               <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
               <p className="text-primary mb-2">{certificate.period}</p>
