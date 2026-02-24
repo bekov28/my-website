@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../context/ThemeContext";
+import { SiBuymeacoffee } from "react-icons/si";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -31,9 +32,12 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto px-4 text-black dark:text-white">
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
+          <div className="text-primary flex justify-center items-center gap-1">
+            <SiBuymeacoffee className="h-8 w-8 flex" />
           <Link href="/" className="text-xl font-bold text-primary">
             Berdiyor Orzikulov
           </Link>
+          </div>
           {/* desktop menus */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => {
