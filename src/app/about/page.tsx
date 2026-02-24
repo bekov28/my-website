@@ -109,10 +109,10 @@ const AboutPage = () => {
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
           I&apos;m a passionate <span className="text-primary">Full Stack Developer</span> with 2+
           years of experience in building modern web applications. I also have 6 years of experience
-          in Marketing/Operations and Customer Solutions Management in various South Korean fintech
-          companies. With a strong foundation in both{" "}
-          <span className="text-primary">Marketing and IT</span> technologies, I strive to create
-          seamless user interfaces and robust server-side solutions.
+          in Marketing/Operations and Customer Solutions in various South Korean fintech companies.
+          With a strong foundation in both <span className="text-primary">Marketing and IT</span>{" "}
+          technologies, I strive to create seamless user interfaces and robust server-side
+          solutions.
         </p>
       </motion.section>
 
@@ -291,7 +291,7 @@ const AboutPage = () => {
                   {position.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30"
+                      className="px-3 py-1 mt-2 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30"
                     >
                       {tech}
                     </span>
