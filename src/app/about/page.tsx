@@ -53,23 +53,17 @@ const AboutPage = () => {
               Nationality: <span className="text-primary">Uzbekistan</span>
             </p>
             <p>
-              Profession:{" "}
-              <span className="text-primary">Full Stack Developer | Frontend engineer</span>
+              Profession: <span className="text-primary">Full Stack Developer</span>
             </p>
             <p>
               Current Residence: <span className="text-primary">Seoul, South Korea</span>
             </p>
             <p>
-              Visa Type:{" "}
-              <span className="text-primary">
-                F-5 (Permanent Resident) [No visa support required]
-              </span>
+              Visa Type: <span className="text-primary">F-5 (Permanent resident)</span>
             </p>
             <p>
               Foreign Languages:{" "}
-              <span className="text-primary">
-                English (fluent), Korean (fluent), Russian (intermediate), Uzbek (native)
-              </span>
+              <span className="text-primary">English, Korean, Russian, Uzbek</span>
             </p>
             <p>
               Interests:{" "}
