@@ -4,6 +4,10 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./context/ThemeContext";
 import Footer from "./components/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+// import { routing } from "./i18n/routing";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,9 +26,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
   return (
     <html lang="en">
       <body
