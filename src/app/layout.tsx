@@ -24,13 +24,11 @@ export const metadata: Metadata = {
   description: "Welcome to my website",
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: {
+type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+};
+
+export default async function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body
