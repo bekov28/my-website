@@ -24,21 +24,28 @@ export const metadata: Metadata = {
   description: "Welcome to my website",
 };
 
+// Next.js 16 requires params to be a Promise
 type Props = {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 };
 
-export default async function RootLayout({ children }: Props) {
+export default async function RootLayout({ children, params }: Props) {
+  // Await the params to get the locale (e.g., 'en' or 'ko')
+  const { locale } = await params;
+  const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white transition-colors dark:bg-gray-900 text-white`}
       >
-        <ThemeProvider>
-          <Navbar />
-          <main className="min-h-screen pt-24 dark:text-white text-black"> {children}</main>
-          <Footer />
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <ThemeProvider>
+            <Navbar />
+            <main className="min-h-screen pt-24 dark:text-white text-black"> {children}</main>
+            <Footer />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

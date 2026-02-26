@@ -7,8 +7,10 @@ import { motion } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/utils/animation";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
   // Create reference to store the DOM element containing the animation
   const el = useRef(null);
   useEffect(() => {
@@ -90,7 +92,7 @@ const Hero = () => {
             href="/projects"
             className="bg-primary inline-block w-[60%] md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors"
           >
-            View Projects
+            {t("View Projects")}
           </Link>
 
           <Link
