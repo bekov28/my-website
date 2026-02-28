@@ -50,7 +50,7 @@ const Hero = () => {
         </motion.div>
 
         <div className="text-4xl md:text-6xl font-bold mb-6">
-          Hi, I&apos;m <span className="text-primary">Berd</span>
+          {t("heroGreeting")} <span className="text-primary">{t("heroName")}</span>
         </div>
 
         <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
@@ -92,7 +92,7 @@ const Hero = () => {
             href="/projects"
             className="bg-primary inline-block w-[60%] md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors"
           >
-            {t("View Projects")}
+            View Projects
           </Link>
 
           <Link

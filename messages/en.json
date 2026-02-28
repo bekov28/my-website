@@ -1,5 +1,6 @@
 {
   "Hero": {
-    "View Projects": "View Projects"
+    "heroGreeting": "Hi, I'm",
+    "heroName": "Berd"
   }
 }
