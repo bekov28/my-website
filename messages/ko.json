@@ -163,6 +163,37 @@
         "분석 도구를 사용하여 솔루션을 정렬하여 비즈니스를 추진하고 온라인 회의를 개최하여 팀원들에게 회사 뉴스 공유 등 업무 수행"
       ],
       "stack": ["Groupware", "Slack", "Skype", "Tableau", "SNS", "Marketing"]
+    },
+    "education": "학력",
+    "fullStack": "풀 스택 웹 개발 부트캠프",
+    "southKorea": "대한민국 · 2024.06 - 2024.12",
+    "fullStackItem": "MERN Stack (MongoDB, Express, React, Node.js)을 사용한 풀 스택 개발",
+    "degree1": "경영학 석사 (MBA), 대한민국",
+    "university1": "동서대학교 · 2016.09 - 2018.08",
+    "major1": "마케팅, 금융, 국제 무역, 경제 및 비즈니스 학습",
+    "degree2": "금융 및 경제학 학사, 우즈베키스탄",
+    "university2": "타슈켄트 금융대학교 · 2011.09 - 2015.08",
+    "major2": "금융 및 경제학 전공, 부전공: 정보통신학",
+    "it": "IT 강의 및 자격증",
+    "vue": {
+      "title": "완전한 Vue.js 개발자",
+      "period": "우데미 · 2025.07",
+      "description": "Vue.js, Pinia, 다이내믹 스타일링, 구성 요소, Firebase를 포함한 포괄적인 Vue.js 온라인 강의 완료",
+      "details": [
+        "Vue.js, Vue 라우터를 통한 라우팅 및 Pinia 상태 관리의 기초 학습",
+        "Ref 참조, 반응성, 바인딩 등 뷰 반응성 기술 습득"
+      ],
+      "image": "/certificates/vue.png"
+    },
+    "webDesign": {
+      "title": "반응형 웹 디자인",
+      "period": "freeCodeCamp · 2025.02",
+      "description": "300시간의 과정을 이수하고 HTML과 CSS 분야의 기초 웹 개발 기술을 새롭게 다졌습니다",
+      "details": [
+        "반응형 웹 디자인, HTML 구조",
+        "CSS 박스 모델, CSS 그리드, CSS 애니메이션, CSS 플렉스박스 등"
+      ],
+      "image": "/certificates/web_design.jpg"
     }
   },
   "Footer": {

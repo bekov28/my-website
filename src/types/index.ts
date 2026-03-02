@@ -22,10 +22,11 @@ export interface Blog {
 }
 
 export interface Certificate {
+  id: string;
   title: string;
   period: string;
   description: string;
-  details: string[];
+  details: string;
   image: string;
 }
 

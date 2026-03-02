@@ -163,6 +163,37 @@
         "Worked with Analytical tools aligning solutions to drive business and held online meetings to share company updates"
       ],
       "stack": ["Groupware", "Slack", "Skype", "Tableau", "SNS", "Marketing"]
+    },
+    "education": "Education",
+    "fullStack": "Full Stack Web Development BootCamp",
+    "southKorea": "South Korea · 2024.06 - 2024.12",
+    "fullStackItem": "Full Stack Development with MERN Stack (MongoDB, Express, React, Node.js)",
+    "degree1": "Master of Business Administration (MBA), South Korea",
+    "university1": "Dongseo University · 2016.09 - 2018.08",
+    "major1": "Studied marketing, finance, international trade, economics and business",
+    "degree2": "B.A in Finance & Economics, Uzbekistan",
+    "university2": "Tashkent Financial Institute · 2011.09 - 2015.08",
+    "major2": "Major in Finance, Banking, Economics / Minor in Information Technlogies",
+    "it": "IT Courses / Certificates",
+    "vue": {
+      "title": "Complete Vue.js Developer",
+      "period": "Udemy · 2025.07",
+      "description": "Completed comprehensive Vue.js Course including Vue.js, Pinia, Dynamic Styling, Components, Firebase",
+      "details": [
+        "Learned fundamentals of Vue.js, Routing with Vue Router and Pinia state management",
+        "Gained skills in Vue Reactivity, including Ref, Reactive, Binding"
+      ],
+      "image": "/certificates/vue.png"
+    },
+    "webDesign": {
+      "title": "Responsive Web Design Course",
+      "period": "freeCodeCamp · 2025.02",
+      "description": "Completed 300-hour course and refreshened my foundational web development skills in HTML and CSS",
+      "details": [
+        "Responsive Web Design, HTML Structure",
+        "CSS Box Model, CSS Grid, CSS Animations, CSS Flexbox and others"
+      ],
+      "image": "/certificates/web_design.jpg"
     }
   },
   "Footer": {

@@ -280,48 +280,39 @@ const AboutPage = () => {
 
       {/* education section */}
       <section className="mb-16">
-        <h2 className="section-title">Education</h2>
+        <h2 className="section-title">{t("education")}</h2>
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <div className="flex gap-2 mb-2">
               <GiDiploma className="h-10 w-10 text-primary" />
-              <h3 className="text-xl font-semibold mt-2">Full Stack Web Development BootCamp</h3>
+              <h3 className="text-xl font-semibold mt-2">{t("fullStack")}</h3>
             </div>
-            <p className="text-primary mb-2">South Korea · 2024.06 - 2024.12</p>
-            <p className="text-secondary">
-              Full Stack Development with MERN Stack (MongoDB, Express, React, Node.js)
-            </p>
+            <p className="text-primary mb-2">{t("southKorea")}</p>
+            <p className="text-secondary">{t("fullStackItem")}</p>
           </div>
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <div className="flex gap-2 mb-2">
               <FaGraduationCap className="h-10 w-10 text-primary" />
-              <h3 className="text-xl font-semibold mt-2">
-                Master of Business Administration (MBA), South Korea
-              </h3>
+              <h3 className="text-xl font-semibold mt-2">{t("degree1")}</h3>
             </div>
-            <p className="text-primary mb-2">Dongseo University · 2016.09 - 2018.08</p>
-            <p className="text-secondary">
-              Studied marketing, finance, international trade, economics and business
-            </p>
+            <p className="text-primary mb-2">{t("university1")}</p>
+            <p className="text-secondary">{t("major1")}</p>
           </div>
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <div className="flex gap-2 mb-2">
               <FaGraduationCap className="h-10 w-10 text-primary" />
-              <h3 className="text-xl font-semibold mt-2">B.A in Finance & Economics, Uzbekistan</h3>
+              <h3 className="text-xl font-semibold mt-2">{t("degree2")}</h3>
             </div>
-            <p className="text-primary mb-2">Tashkent Financial Institute · 2011.09 - 2015.08</p>
-            <p className="text-secondary">
-              Major in Finance, Banking, Economics / Minor in Information Technlogies and English
-              Language
-            </p>
+            <p className="text-primary mb-2">{t("university2")}</p>
+            <p className="text-secondary">{t("major2")}</p>
           </div>
         </div>
       </section>
 
       {/* Tech certificates/courses */}
       <section className="mb-16">
-        <h2 className="section-title">IT courses/certificates</h2>
+        <h2 className="section-title">{t("it")}</h2>
 
         <div className="max-w-3xl mx-auto space-y-8">
           {certificates.map((certificate) => (
@@ -329,12 +320,13 @@ const AboutPage = () => {
               key={certificate.title}
               className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md transition-transform duration-150 hover:scale-102"
             >
-              <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
-              <p className="text-primary mb-2">{certificate.period}</p>
-              <p className="text-purple-400 italic">{certificate.description}</p>
+              <h3 className="text-xl font-semibold mb-2">{t(certificate.title)}</h3>
+              <p className="text-primary mb-2">{t(certificate.period)}</p>
+              <p className="text-purple-400 italic">{t(certificate.description)}</p>
               <ul className="text-secondary space-y-2 list-disc list-inside">
-                <li>{certificate.details[0]}</li>
-                <li>{certificate.details[1]}</li>
+                {(t.raw(certificate.details) as string[]).map((detail, index) => (
+                  <li key={index}>{detail}</li>
+                ))}
               </ul>
               <div
                 className="flex justify-center mt-10 rounded-lg overflow-hidden cursor-pointer"
