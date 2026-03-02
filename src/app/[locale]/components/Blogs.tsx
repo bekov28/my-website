@@ -4,11 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { FaCalendar, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Blogs = () => {
+  const t = useTranslations("Blogs");
   return (
     <motion.section className="py-20 container max-w-7xl mx-auto px-4 ">
-      <h2 className="text-3xl font-bold mb-12 text-center">Latest Blog Posts</h2>
+      <h2 className="text-3xl font-bold mb-12 text-center">{t("blogsTitle")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {blogs.map((blog) => (
           <article
@@ -17,9 +19,9 @@ const Blogs = () => {
           >
             <Link href={`/blogs/${blog.slug}`} className="flex flex-col gap-4">
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
-                {blog.title}
+                {t(blog.title)}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{t(blog.excerpt)}</p>
               <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
                 <span className="flex items-center">
                   <FaCalendar className="mr-2" />
@@ -27,7 +29,7 @@ const Blogs = () => {
                 </span>
                 <span className="flex items-center">
                   <FaClock className="mr-2" />
-                  {blog.readTime}
+                  {t(blog.readTime)}
                 </span>
               </div>
             </Link>
@@ -40,7 +42,7 @@ const Blogs = () => {
           href="/blogs"
           className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors"
         >
-          View All Posts
+          {t("view")}
         </Link>
       </div>
     </motion.section>

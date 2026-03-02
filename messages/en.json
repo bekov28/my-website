@@ -71,8 +71,23 @@
       "period": "[2025.06]"
     }
   },
+  "Blogs": {
+    "blogsTitle": "Latest Blog Posts",
+    "view": "View All Posts",
+    "about": {
+      "title": "A little about me...",
+      "excerpt": "Let me introduce myself in this post",
+      "date": "2025-10-08",
+      "readTime": "3 min read",
+      "slug": "about-me"
+    },
+    "myBlogs": "My Blogs"
+  },
   "About": {
     "aboutTitle": "About Me",
     "aboutDescription": "I'm Berd, a passionate software developer with a love for creating innovative solutions. With experience in various programming languages and frameworks, I enjoy tackling complex problems and building applications that make a difference. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blogging."
+  },
+  "Footer": {
+    "name": "Berdiyor Orzikulov"
   }
 }

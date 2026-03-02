@@ -5,12 +5,14 @@ import Link from "next/link";
 import { FaCalendar, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { scaleIn } from "@/utils/animation";
+import { useTranslations } from "next-intl";
 
 const BlogsPage = () => {
+  const t = useTranslations("Blogs");
   return (
     <section className="container max-w-7xl mx-auto py-20">
       <h1 className="text-4xl font-bold mb-4 text-center">
-        <span>My Blogs</span>
+        <span>{t("myBlogs")}</span>
       </h1>
 
       <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" {...scaleIn}>
@@ -21,9 +23,9 @@ const BlogsPage = () => {
           >
             <Link href={`/blogs/${blog.slug}`} className="flex flex-col gap-4">
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
-                {blog.title}
+                {t(blog.title)}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">{blog.excerpt}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{t(blog.excerpt)}</p>
               <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 space-x-4">
                 <span className="flex items-center">
                   <FaCalendar className="mr-2" />
@@ -31,7 +33,7 @@ const BlogsPage = () => {
                 </span>
                 <span className="flex items-center">
                   <FaClock className="mr-2" />
-                  {blog.readTime}
+                  {t(blog.readTime)}
                 </span>
               </div>
             </Link>

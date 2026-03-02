@@ -2,10 +2,11 @@ import { Blog } from "../types";
 
 export const blogs: Blog[] = [
   {
-    title: "A little about me...",
-    excerpt: "Let me introduce myself in this post",
+    id: "about",
+    title: "about.title",
+    excerpt: "about.excerpt",
     date: "2025-10-08",
-    readTime: "3 min read",
+    readTime: "about.readTime",
     slug: "about-me",
   },
 ];

@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="text-primary flex justify-center items-center gap-1">
               <SiBuymeacoffee className="h-8 w-8 flex" />
               <Link href="/" className="text-xl font-bold">
-                Berdiyor Orzikulov
+                {t("name")}
               </Link>
             </div>
             <p className="text-sm text-secondary mt-2">

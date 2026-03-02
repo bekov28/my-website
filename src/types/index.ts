@@ -13,6 +13,7 @@ export interface Project {
 }
 
 export interface Blog {
+  id: string;
   title: string;
   excerpt: string;
   date: string;
