@@ -3,11 +3,6 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
-const nextConfig: NextConfig = {
-  //image optimization
-  // images: {
-  //   remotePatterns: [{ hostname: "cdn.sanity.io" }],
-  // },
-};
+const nextConfig: NextConfig = {};
 
 export default withNextIntl(nextConfig);

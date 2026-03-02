@@ -32,7 +32,7 @@ const AboutPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20">
       <motion.div {...pageTransition}>
         <h1 className="text-4xl font-bold mb-12 text-center">
-          <span>About me</span>
+          <span>About Me</span>
         </h1>
         <div className="flex flex-col sm:flex-row justify-center items-center mb-10 gap-15 cursor-pointer">
           <Image

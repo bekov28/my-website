@@ -1,0 +1,78 @@
+{
+  "Navbar": {
+    "name": "베르디료르 오즈쿨로브",
+    "home": "홈",
+    "about": "소개",
+    "projects": "프로젝트",
+    "blogs": "블로그",
+    "contact": "연락처"
+  },
+  "Hero": {
+    "heroGreeting": "안녕하세요,",
+    "heroName": "버드입니다",
+    "view": "프로젝트 보기",
+    "contact": "연락하기",
+    "pro1": "풀 스택 개발자",
+    "pro2": "웹 개발자",
+    "pro3": "고객 솔루션 매니저",
+    "pro4": "여기서 만나서 반갑습니다!"
+  },
+  "Projects": {
+    "projectsTitle": "최근 프로젝트를 확인해보세요",
+    "projectsSubtitle": "전체 프로젝트 목록은 프로젝트 섹션에서 확인하실 수 있습니다",
+    "shinhan": {
+      "title": "[팀 프로젝트] 신한은행 외환 거래 플랫폼 (웹 프로젝트)",
+      "description": "신한은행의 외환 거래 플랫폼으로, 고객이 계정을 등록하고 다양한 유형의 스왑 및 선물환 거래를 통해 거래를 시작할 수 있도록 지원합니다.",
+      "technologies": ["Vue.js", "Java", "Spring-boot", "Maven"],
+      "githubLink": "",
+      "demoLink": "https://efx.shinhan.com/",
+      "image": "/projects/shinhan.png",
+      "role": "[프론트엔드 개발자] - 15% 기여율",
+      "tasks": [
+        "JavaScript, Vue.js 및 Vite를 사용하여 웹 거래 애플리케이션을 위한 재사용 가능한 UI 구성 요소를 개발하여 새로운 기능에 대한 프론트엔드 개발 시간을 30% 단축",
+        "Figma 디자인을 기능적인 코드로 변환",
+        "RESTful API를 통합하고 Pinia로 상태를 관리하여 원활한 데이터 흐름 제공",
+        "ES6 Promises 및 Async/Await를 활용하여 비동기 데이터 가져오기 성능을 최적화하여 기존 콜백에 비해 API 응답 처리 시간을 15% 단축",
+        "Git/GitLab을 사용하여 버전 관리를 관리하고 CI/CD 관리"
+      ],
+      "period": "[2025.06 - 2026.02]"
+    },
+    "yujin": {
+      "title": "[팀 프로젝트] 유진증권 미국 주식 옵션 거래 플랫폼 (웹/모바일)",
+      "description": "이 모바일 거래 애플리케이션은 한국 고객이 미국 주식과 옵션을 롱 및 숏 스프레드를 통해 거래할 수 있도록 하며, 고객은 거래를 위해 계정을 열 수도 있습니다.",
+      "technologies": ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
+      "githubLink": "",
+      "demoLink": "https://www.eugenefutures.com/OptionsHub/index.html",
+      "image": "/projects/yujin.png",
+      "role": "[프론트엔드 개발자] - 10% 기여율",
+      "tasks": [
+        "HTML, SCSS, Vanilla JS/jQuery로 인터랙티브하고 재사용 가능한 사용자 인터페이스 구성 요소 구축",
+        "Java로 API를 통합하고 서버 측 기능 구현",
+        "코드 베이스를 리팩토링하고 버그 수정",
+        "Git/GitLab을 활용하여 버전 관리를 수행하고 문제 디버깅 및 해결 경험을 쌓음",
+        "시니어 개발자 및 디자인 팀과 협력하여 프로젝트 요구 사항을 개선"
+      ],
+      "period": "[2025.03 - 2025.06.15]"
+    },
+    "vue": {
+      "title": "Vue.js 개발자를 위한 구직 플랫폼 (웹 프로젝트)",
+      "description": "이 웹사이트는 웹 개발자가 Vue.js 관련 일자리를 찾고 고용주가 웹 개발자를 채용할 수 있도록 하는 것을 목표로 합니다. 백엔드에는 JSON Web Server가 사용되었으므로 데모 버전에서는 실제 작업 내용을 볼 수 없습니다.",
+      "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
+      "githubLink": "https://github.com/bekov28/jobs-website-vue",
+      "demoLink": "https://jobs-website-vue.netlify.app/",
+      "image": "/projects/vue.png",
+      "role": "[풀 스택 개발자]",
+      "tasks": [
+        "HTML, Tailwind CSS 및 Vue.js Composition API에서 재사용 가능한 구성 요소 구축",
+        "JSON Web Server와 백엔드 통합",
+        "JavaScript ES6+ 기능 적용 및 향상된 코드 가독성",
+        "ES6+ 고차 함수(.map(), .filter(), .reduce()를 구현하여 복잡한 중첩 루프를 대체함으로써 데이터 처리 효율성이 30% 향상"
+      ],
+      "period": "[2025.06]"
+    }
+  },
+  "About": {
+    "aboutTitle": "간단 소개",
+    "aboutDescription": "혁신적인 솔루션을 만드는 것을 좋아하는 열정적인 소프트웨어 개발자 Berd입니다. 다양한 프로그래밍 언어와 프레임워크에 대한 경험을 바탕으로 복잡한 문제를 해결하고 변화를 주는 애플리케이션을 구축하는 것을 즐깁니다. 코딩을 하지 않을 때는 새로운 기술을 탐구하거나 오픈 소스 프로젝트에 기여하거나 블로그를 통해 지식을 공유하는 것을 좋아합니다."
+  }
+}

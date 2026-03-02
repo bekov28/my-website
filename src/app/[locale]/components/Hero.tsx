@@ -15,12 +15,7 @@ const Hero = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        "Full Stack Developer",
-        "Web Developer",
-        "and Customer Solutions Manager",
-        "Glad to see you here!",
-      ],
+      strings: [t("pro1"), t("pro2"), t("pro3"), t("pro4")],
       typeSpeed: 50,
       backSpeed: 100,
       backDelay: 1000,
@@ -30,7 +25,7 @@ const Hero = () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-  });
+  }, [t]);
 
   return (
     <section className="py-28 container max-w-7xl px-4">
@@ -92,14 +87,14 @@ const Hero = () => {
             href="/projects"
             className="bg-primary inline-block w-[60%] md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors"
           >
-            View Projects
+            {t("view")}
           </Link>
 
           <Link
             href="/contact"
             className="bg-gray-500 inline-block w-[60%] md:w-auto text-white hover:text-gray-800 px-8 py-3 rounded-lg hover:bg-gray-300 transition-colors"
           >
-            Contact Me
+            {t("contact")}
           </Link>
         </motion.div>
       </div>

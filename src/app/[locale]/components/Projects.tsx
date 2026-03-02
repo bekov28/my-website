@@ -4,16 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 //Projects
 const Projects = () => {
+  const t = useTranslations("Projects");
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold">Check My Recent Projects</h1>
-        <p className="text-lg text-secondary mt-4">
-          For the full list of my projects, please kindly go to Projects section
-        </p>
+        <h1 className="text-4xl font-bold">{t("projectsTitle")}</h1>
+        <p className="text-lg text-secondary mt-4">{t("projectsSubtitle")}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -33,14 +33,14 @@ const Projects = () => {
               />
             </div>
 
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2">{t(project.title)}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify mt-4 italic">
-              {project.description}
+              {t(project.description)}
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">{project.role}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">{t(project.role)}</p>
             <ul className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
-              {project.tasks.map((task) => (
-                <li key={task}>- {task}</li>
+              {(t.raw(project.tasks) as string[]).map((task, index) => (
+                <li key={index}>- {task}</li>
               ))}
             </ul>
             <p className="text-gray-600 dark:text-gray-300 mb-4">{project.period}</p>

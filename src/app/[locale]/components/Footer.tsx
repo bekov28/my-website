@@ -1,9 +1,12 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { SiBuymeacoffee } from "react-icons/si";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-800">
       <div className="container max-w-7xl mx-auto px-4 py-8">

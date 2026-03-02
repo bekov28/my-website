@@ -4,7 +4,7 @@ export const techStack: TechStack[] = [
   {
     position: "Front End Developer",
     period: "coForward · 2025.03 ~ Present",
-    location: "Seoul, South Korea",
+    location: "Seoul, S.Korea",
     tasks: [
       "Built interactive and reusable user interface components with HTML5, CSS3, Vanilla JS and Vue.js",
       "Developed and designed the finance and trade web platform using JavaScript (ES6+) and implemented server-side functionality using Java, contributing to the development of RESTful APIs for front-end",
@@ -28,7 +28,7 @@ export const techStack: TechStack[] = [
   {
     position: "Marketing and Operations Manager (Client Service Team)",
     period: "SentBe · 2022.09 - 2025.01 (2y 4months)",
-    location: "Seoul, South Korea",
+    location: "Seoul, S.Korea",
     tasks: [
       "Handled overseas transfer operations and regularly talked with software developers and UX/UI designers to improve the web and mobile application of the company",
       "Leveraged analytical tools and social platform integrations to scale user acquisition by 250% in 6 months, bridging the gap between digital marketing strategy and mobile app performance",
@@ -39,7 +39,7 @@ export const techStack: TechStack[] = [
   {
     position: "Operations and Customer Support Manager",
     period: "GmoneyTrans · 2019.01 - 2022.08 (3y 8months)",
-    location: "Ansan, South Korea",
+    location: "Ansan, S.Korea",
     tasks: [
       "Promoted the company’s mobile application, often collaborated with Mobile Developers and UI/UX Designers to improve the mobile service",
       "Managed online and offline overseas remittance transactions to over 50 countries and resolved compliance-related operations",

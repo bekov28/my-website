@@ -6,8 +6,6 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Footer from "./components/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-// import { routing } from "./i18n/routing";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +32,7 @@ export default async function RootLayout({ children, params }: Props) {
   // Await the params to get the locale (e.g., 'en' or 'ko')
   const { locale } = await params;
   const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <body

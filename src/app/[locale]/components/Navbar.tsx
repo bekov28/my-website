@@ -6,8 +6,12 @@ import React, { useState } from "react";
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../context/ThemeContext";
 import { SiBuymeacoffee } from "react-icons/si";
+import LanguageToggle from "./LanguageToggle";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
+  const t = useTranslations("Navbar");
+
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
@@ -17,11 +21,11 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/blogs", label: "Blogs" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "home" },
+    { href: "/about", label: "about" },
+    { href: "/projects", label: "projects" },
+    { href: "/blogs", label: "blogs" },
+    { href: "/contact", label: "contact" },
   ];
 
   return (
@@ -34,9 +38,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="text-primary flex justify-center items-center gap-1">
             <SiBuymeacoffee className="h-8 w-8 flex" />
-          <Link href="/" className="text-xl font-bold text-primary">
-            Berdiyor Orzikulov
-          </Link>
+            <Link href="/" className="text-xl font-bold text-primary">
+              {t("name")}
+            </Link>
           </div>
           {/* desktop menus */}
           <div className="hidden md:flex items-center space-x-8">
@@ -50,7 +54,7 @@ const Navbar = () => {
                     isActive ? "text-primary" : ""
                   }`}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </Link>
               );
             })}
@@ -65,6 +69,7 @@ const Navbar = () => {
                 <MoonIcon className="w-5 h-5" />
               )}
             </button>
+            <LanguageToggle />
           </div>
 
           {/* mobile menu button */}

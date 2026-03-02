@@ -1,5 +1,6 @@
 //type definitions for objects
 export interface Project {
+  id: string;
   title: string;
   description: string;
   technologies: string[];
@@ -7,7 +8,7 @@ export interface Project {
   demoLink: string;
   image: string;
   role: string;
-  tasks: string[];
+  tasks: string;
   period: string;
 }
 
