@@ -30,9 +30,10 @@ export interface Certificate {
 }
 
 export interface TechStack {
+  id: string;
   position: string;
   period: string;
   location: string;
-  tasks: string[];
+  tasks: string;
   stack: string[];
 }
