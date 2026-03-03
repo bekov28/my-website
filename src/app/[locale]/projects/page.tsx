@@ -35,9 +35,9 @@ const ProjectPage = () => {
               />
             </div>
 
-            <h3 className="text-xl font-semibold mb-2 text-justify">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-justify">{t(project.title)}</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify mt-4">
-              {project.description}
+              {t(project.description)}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -64,7 +64,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaGithub className="w-5 h-5" />
-                <span>Code</span>
+                <span>{t("code")}</span>
               </Link>
 
               <Link
@@ -79,7 +79,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
-                <span>Link</span>
+                <span>{t("link")}</span>
               </Link>
             </div>
           </article>
