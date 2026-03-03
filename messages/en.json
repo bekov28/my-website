@@ -196,6 +196,10 @@
       "image": "/certificates/web_design.jpg"
     }
   },
+  "ProjectPage": {
+    "teamProjects": "Team Projects",
+    "teamProjectsDesc": "Some of my recent projects in teams. Click on the links to see the projects lively."
+  },
   "Footer": {
     "name": "Berdiyor Orzikulov"
   }

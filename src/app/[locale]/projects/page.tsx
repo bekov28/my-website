@@ -7,16 +7,16 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { sideProjects } from "@/contents/sideProjects";
+import { useTranslations } from "next-intl";
 
 const ProjectPage = () => {
+  const t = useTranslations("ProjectPage");
   return (
     <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
-      <h1 className="text-4xl font-bold mb-4 text-center">Team Projects</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">{t("teamProjects")}</h1>
       <p className="text-lg text-secondary mb-16 text-center">
         {" "}
-        <span>
-          Some of my recent projects in teams. Click on the links to see the projects lively.
-        </span>
+        <span>{t("teamProjectsDesc")}</span>
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
