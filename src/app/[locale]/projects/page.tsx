@@ -134,7 +134,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaGithub className="w-5 h-5" />
-                <span>Code</span>
+                <span>{t("code")}</span>
               </Link>
 
               <Link
@@ -149,7 +149,7 @@ const ProjectPage = () => {
                 }}
               >
                 <FaExternalLinkAlt className="w-5 h-5" />
-                <span>Link</span>
+                <span>{t("link")}</span>
               </Link>
             </div>
           </article>
