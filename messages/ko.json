@@ -227,7 +227,42 @@
       "period": "[2025.03 ~ 2025.06.15]"
     },
     "code": "코드",
-    "link": "링크"
+    "link": "링크",
+    "sideProjects": "개인 프로젝트",
+    "sideProjectsDesc": "개인적으로 개발한 프로젝트들입니다. 링크를 클릭하시면 더욱 자세히 보실 수 있습니다.",
+    "vueJobs": {
+      "title": "Vue.js 개발자를 위한 구직 플랫폼 [2025.06]",
+      "description": " 이 웹사이트는 웹 개발자들이 개발자 일자리, 특히 Vue 일자리를 찾고 고용주들이 웹 개발자를 고용하는 것을 목표로 만들어졌습니다. JSON 웹 서버는 백엔드 용도로 사용되었기 때문에 데모 버전에서는 실제 작업 내용을 찾아볼 수 없습니다.",
+      "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
+      "githubLink": "https://github.com/bekov28/jobs-website-vue",
+      "demoLink": "https://jobs-website-vue.netlify.app/",
+      "image": "/projects/vue.png",
+      "role": "",
+      "tasks": "",
+      "period": ""
+    },
+    "graniteShop": {
+      "title": "이커머스 온라인 스터 (Vue.js, Firebase) [2025.07 ~ 2025.08]",
+      "description": "이 Firebase 기반 풀스택 웹사이트는 사용자가 가입하여 화강암, 석영, 대리석 등 모든 종류의 귀중한 돌을 살펴볼 수 있는 온라인 스토어입니다. Vue.js에 내장된 사용자 역할과 관리자 역할이 분리되어 있으며, 관리자만 제품 목록을 추가하고 편집할 수 있습니다.",
+      "technologies": ["Vue.js", "Pinia", "Firebase", "Bootstrap"],
+      "githubLink": "https://github.com/bekov28/granite-online-shop",
+      "demoLink": "https://graniteshop-29e1a.web.app/",
+      "image": "/projects/stone-website.png",
+      "role": "",
+      "tasks": "",
+      "period": ""
+    },
+    "camper": {
+      "title": "캠프카 렌트 플랫폼 (React.js) [2024.08 ~ 2024.09]",
+      "description": "이 프론트엔드 웹사이트는 사용자가 캠프카를 대여하고 구매할 수 있도록 도와주는 목적으로 만든 데모 사이트입니다. React.js 18와 JavaScript로 개발한 이 웹사이트는 사용자 친화적인 인터페이스를 갖추고 있습니다. 또한, 이 프로젝트에서 스타일드 컴포넌트, MUI 라이브러리, React Router 및 React Hooks를 사용했습니다",
+      "technologies": ["React.js", "MUI", "Styled components", "React Router", "EmailJS"],
+      "githubLink": "https://github.com/bekov28/camper-project-react",
+      "demoLink": "https://campertestsite.netlify.app/",
+      "image": "/projects/camper.png",
+      "role": "",
+      "tasks": "",
+      "period": ""
+    }
   },
   "Footer": {
     "name": "베르디료르 오즈쿨로브"

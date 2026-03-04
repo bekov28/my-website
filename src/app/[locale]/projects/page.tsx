@@ -85,13 +85,9 @@ const ProjectPage = () => {
           </article>
         ))}
       </div>
-      <h1 className="text-4xl font-bold mb-4 text-center mt-24">Side Projects</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center mt-24">{t("sideProjects")}</h1>
       <p className="text-lg text-secondary mb-16 text-center">
-        {" "}
-        <span>
-          List of some of my side projects where I explored new technologies, built and learnt along
-          the way.
-        </span>
+        <span>{t("sideProjectsDesc")}</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {sideProjects.map((project) => (
