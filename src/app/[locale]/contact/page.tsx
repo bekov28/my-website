@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { pageTransition, slideInLeft, slideInRight } from "@/utils/animation";
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "next-intl";
 
 interface FormData {
   user_name: string;
@@ -16,6 +17,7 @@ interface FormData {
 type FormStatus = "idle" | "loading" | "success" | "error";
 
 const ContactPage = () => {
+  const t = useTranslations("ContactPage");
   const [formData, setFormData] = useState<FormData>({
     user_name: "",
     user_email: "",
@@ -92,32 +94,27 @@ const ContactPage = () => {
     <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
       <div className="text-center mb-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold">
-          <span>Contact Me</span>
+          <span>{t("contactTitle")}</span>
         </h1>
-        <p className="text-secondary md:w-2/3 mt-5">
-          Feel free to reach me out if you have amazing projects in mind!
-        </p>
+        <p className="text-secondary md:w-2/3 mt-5">{t("contactDesc")}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* contact info */}
         <motion.div className="space-y-8" {...slideInLeft}>
-          <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-          <p className="text-secondary md:w-2/3">
-            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be
-            part of your visions.
-          </p>
+          <h2 className="text-2xl font-semibold mb-4">{t("getInTouch")}</h2>
+          <p className="text-secondary md:w-2/3">{t("getInTouchDesc")}</p>
 
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <FaEnvelope className="w-6 h-6 text-primary" />
               <div>
-                <h3 className="text-semibold">Email</h3>
+                <h3 className="text-semibold">{t("email")}</h3>
                 <Link
                   href="mailto:berdiyororzu@gmail.com"
                   className="text-secondary hover:text-primary"
                 >
-                  berdiyororzu@gmail.com
+                  {t("email")}
                 </Link>
               </div>
             </div>
@@ -125,9 +122,9 @@ const ContactPage = () => {
             <div className="flex items-center gap-4">
               <FaPhone className="w-6 h-6 text-primary" />
               <div>
-                <h3 className="text-semibold">Phone</h3>
+                <h3 className="text-semibold">{t("phone")}</h3>
                 <Link href="tel: 010-2811-8826" className="text-secondary hover:text-primary">
-                  +(82) 10-2811-8826
+                  {t("phoneNumber")}
                 </Link>
               </div>
             </div>
@@ -135,8 +132,8 @@ const ContactPage = () => {
             <div className="flex items-center gap-4">
               <FaMapMarkerAlt className="w-6 h-6 text-primary" />
               <div>
-                <h3 className="text-semibold">Location</h3>
-                <p className="text-secondary">Seoul, South Korea</p>
+                <h3 className="text-semibold">{t("location")}</h3>
+                <p className="text-secondary">{t("locationDesc")}</p>
               </div>
             </div>
           </div>
@@ -151,7 +148,7 @@ const ContactPage = () => {
           <form className="space-y-6" onSubmit={handleSubmit} ref={form}>
             <div>
               <label htmlFor="user_name" className="block text-sm font-medium mb-2">
-                Name
+                {t("name")}
               </label>
               <input
                 type="text"
@@ -160,7 +157,7 @@ const ContactPage = () => {
                 required
                 value={formData.user_name}
                 onChange={handleChange}
-                placeholder="Enter your name"
+                placeholder={t("namePlaceholder")}
                 className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2
                  focus:ring-primary focus:border-none"
               />
@@ -168,7 +165,7 @@ const ContactPage = () => {
 
             <div>
               <label htmlFor="user_email" className="block text-sm font-medium mb-2">
-                Email
+                {t("contactEmail")}
               </label>
               <input
                 type="email"
@@ -177,7 +174,7 @@ const ContactPage = () => {
                 value={formData.user_email}
                 onChange={handleChange}
                 required
-                placeholder="Enter your email"
+                placeholder={t("emailPlaceholder")}
                 className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2
                  focus:ring-primary focus:border-none"
               />
@@ -185,7 +182,7 @@ const ContactPage = () => {
 
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Message
+                {t("message")}
               </label>
               <textarea
                 rows={4}
@@ -194,22 +191,20 @@ const ContactPage = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder={t("messagePlaceholder")}
                 className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2
                  focus:ring-primary focus:border-none"
               />
             </div>
 
             <button type="submit" className="w-full btn btn-primary">
-              {status === "loading" ? "Sending..." : "Send Message"}
+              {status === "loading" ? "Sending..." : t("sendButton")}
             </button>
 
             {status === "success" && (
-              <p className="text-green-500 text-center">Message sent successfully!</p>
+              <p className="text-green-500 text-center">{t("sendMessage")}</p>
             )}
-            {status === "error" && (
-              <p className="text-red-500 text-center">Failed to send message. Please try again!</p>
-            )}
+            {status === "error" && <p className="text-red-500 text-center">{t("sendError")}</p>}
           </form>
         </motion.div>
       </div>
