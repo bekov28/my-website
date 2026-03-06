@@ -96,7 +96,7 @@ const Navbar = () => {
                     href={item.href}
                     className="block py-2 hover:text-primary transition-colors"
                   >
-                    {item.label}
+                    {t(item.label.toLowerCase())}
                   </Link>
                 </div>
               ))}
