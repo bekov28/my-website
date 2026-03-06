@@ -21,11 +21,11 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { href: "/", label: "home" },
-    { href: "/about", label: "about" },
-    { href: "/projects", label: "projects" },
-    { href: "/blogs", label: "blogs" },
-    { href: "/contact", label: "contact" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/projects", label: "Projects" },
+    { href: "/blogs", label: "Blogs" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -54,7 +54,7 @@ const Navbar = () => {
                     isActive ? "text-primary" : ""
                   }`}
                 >
-                  {t(item.label)}
+                  {t(item.label.toLowerCase())}
                 </Link>
               );
             })}
