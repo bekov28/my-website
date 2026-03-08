@@ -31,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Tech Stack I used in this portfolio-project:
 
-- Next.js - React Framework for full stack applications
+- Next.js - Used Next.js 16 as the latest and most recommendable version of the React Framework for SSR
 - TypeScript - a programming language with strict typing
 - EsLint - a plugin tool for identifying and reporting issues
 - Tailwind CSS - a utility first CSS for rapid styling
