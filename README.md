@@ -41,7 +41,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - HeroIcons - special React-based icons by the Tailwind CSS creators
 - react-icons.github.io - another cool website for React icons
 - Typed.js for text typing animations
-- Next.js internationalization (i18n) for English/Korean Languages
+- Implemented next-intl internationalization (i18n) for English/Korean Languages
 - Deployed the project to Vercel for automated CI/CD
 
 ## Website Demo Photo:
