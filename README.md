@@ -31,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Tech Stack I used in this portfolio-project:
 
-- Next.js - Used Next.js 16 as the latest and most recommendable version of the React Framework for SSR
+- Next.js - Used Next.js 16 for SSR capabilities to improve SEO and initial load time
 - TypeScript - a programming language with strict typing
 - EsLint - a plugin tool for identifying and reporting issues
 - Tailwind CSS - a utility first CSS for rapid styling
@@ -42,6 +42,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - react-icons.github.io - another cool website for React icons
 - Typed.js for text typing animations
 - Next.js internationalization (i18n) for English/Korean Languages
+- Deployed the project to Vercel for automated CI/CD
 
 ## Deploy on Vercel
 
