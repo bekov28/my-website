@@ -8,9 +8,26 @@ import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { sideProjects } from "@/contents/sideProjects";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { Project } from "@/types";
 
 const ProjectPage = () => {
   const t = useTranslations("ProjectPage");
+
+  const [selectedImage, setSelectedImage] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  //select the image when the user clicks on the project card and open the modal
+  const openModal = (project: Project) => {
+    setSelectedImage(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
+
   return (
     <motion.div className="container max-w-7xl mx-auto py-20" {...pageTransition}>
       <h1 className="text-4xl font-bold mb-4 text-center">{t("teamProjects")}</h1>
@@ -25,7 +42,10 @@ const ProjectPage = () => {
             key={project.title}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform duration-150 hover:scale-102 cursor-pointer"
           >
-            <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
+            <div
+              className="relative aspect-video mb-4 rounded-lg overflow-hidden"
+              onClick={() => openModal(project)}
+            >
               <Image
                 src={project.image}
                 alt={project.title}
@@ -95,7 +115,10 @@ const ProjectPage = () => {
             key={project.title}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform duration-150 hover:scale-102 cursor-pointer"
           >
-            <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
+            <div
+              className="relative aspect-video mb-4 rounded-lg overflow-hidden"
+              onClick={() => openModal(project)}
+            >
               <Image
                 src={project.image}
                 alt={project.title}
@@ -154,6 +177,28 @@ const ProjectPage = () => {
             </div>
           </article>
         ))}
+        {/* {Modal} */}
+        <div className="relative max-w-4xl max-h-full">
+          {isModalOpen && selectedImage && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+              <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
+                <button
+                  onClick={closeModal}
+                  className="cursor-pointer absolute -top-10 right-0 text-white text-2xl hover:text-gray-300 z-10"
+                >
+                  x
+                </button>
+                <Image
+                  src={selectedImage.image}
+                  alt={selectedImage.title}
+                  width={800}
+                  height={600}
+                  className="object-contain max-w-full max-h-full rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </motion.div>
   );
