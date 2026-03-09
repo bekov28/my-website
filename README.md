@@ -46,7 +46,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Website Demo Photo:
 
-<img src="./public/projects/portfolio.png" height="600" width="1000"/>
+<img src="./public/projects/portfolio.png" height="800" width="1000"/>
 
 ## Deploy on Vercel
 
