@@ -230,6 +230,23 @@
     "link": "링크",
     "sideProjects": "개인 프로젝트",
     "sideProjectsDesc": "개인적으로 개발한 프로젝트들입니다. 링크를 클릭하시면 더욱 자세히 보실 수 있습니다.",
+    "portfolio": {
+      "title": "개인 포트폴리오 웹사이트 [2025.06 ~ 진행 중]",
+      "description": "이 웹사이트는 Next.js 16, TypeScript 기반으로 개발되었으며 Vercel에 배포되었습니다. 현재도 계속 업데이트 중에 있으며, 향후 새로운 프로젝트나 블로그가 있을때 정기적으로 업데이트될 예정입니다. 국제화(EN/KR)를 위해 i18n 라이브러리를 구현했고, 이미지 최적화를 위해 lazy loading과 priority를 사용했습니다. 또한, 사용자 경험을 더욱 즐겁게 만들기 위해 Framer Motion을 사용하여 멋진 애니메이션을 추가했습니다.",
+      "technologies": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vercel",
+        "Framer Motion",
+        "i18n"
+      ],
+      "demoLink": "https://misterberd.com/",
+      "image": "/projects/portfolio.png",
+      "role": "",
+      "tasks": "",
+      "period": ""
+    },
     "vueJobs": {
       "title": "Vue.js 개발자를 위한 구직 플랫폼 [2025.06]",
       "description": " 이 웹사이트는 웹 개발자들이 개발자 일자리, 특히 Vue 일자리를 찾고 고용주들이 웹 개발자를 고용하는 것을 목표로 만들어졌습니다. JSON 웹 서버는 백엔드 용도로 사용되었기 때문에 데모 버전에서는 실제 작업 내용을 찾아볼 수 없습니다.",

@@ -230,6 +230,23 @@
     "link": "Link",
     "sideProjects": "Side Projects",
     "sideProjectsDesc": "List of some of my side projects where I explored new technologies, built and learnt along the way.",
+    "portfolio": {
+      "title": "Personal Portfolio Website [2025.06 - Present]",
+      "description": "This personal portfolio website is built in Next.js 16, TypeScript and deployed to Vercel. This project is in progress, and will be updated regularly with upcoming new projects and blogs. For internationalization (EN/KR), implemented and designed the i18n library and optimized the images with priority and lazy loading. Also, added awesome animations with Framer Motion to make the user experience more enjoyable.",
+      "technologies": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vercel",
+        "Framer Motion",
+        "i18n"
+      ],
+      "demoLink": "https://misterberd.com/",
+      "image": "/projects/portfolio.png",
+      "role": "",
+      "tasks": "",
+      "period": ""
+    },
     "vueJobs": {
       "title": "Job Searching Platform for Vue.js Developers [2025.06]",
       "description": "This website is aimed for Web developers to find developer jobs, especially Vue jobs and for employers to hire web developers. JSON Web Server was used for backend, so actual job contents can not be browsed in the demo version.",

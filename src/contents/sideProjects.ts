@@ -2,6 +2,18 @@ import { Project } from "@/types";
 
 export const sideProjects: Project[] = [
   {
+    id: "portfolio",
+    title: "portfolio.title",
+    description: `portfolio.description`,
+    technologies: ["Next.js 16", "TypeScript", "Tailwind CSS", "Vercel", "Framer Motion", "i18n"],
+    githubLink: "https://github.com/bekov28/jobs-website-vue",
+    demoLink: "https://jobs-website-vue.netlify.app/",
+    image: "/projects/portfolio.png",
+    role: "",
+    tasks: "",
+    period: "",
+  },
+  {
     id: "vueJobs",
     title: "vueJobs.title",
     description: `vueJobs.description`,
