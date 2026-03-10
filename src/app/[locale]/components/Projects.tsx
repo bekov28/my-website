@@ -2,13 +2,29 @@
 import { recentProjects } from "@/contents/recentProjects";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import { Project } from "@/types";
 
 //Projects
 const Projects = () => {
   const t = useTranslations("Projects");
+
+  const [selectedImage, setSelectedImage] = useState<Project | null>(null); //set initial value of selected image
+  const [isModalOpen, setIsModalOpen] = useState(false); //set initial value of modal open state
+
+  //open the modal with the selected image
+  const openModal = (project: Project) => {
+    setSelectedImage(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
+
   return (
     <section className="py-20 container max-w-7xl mx-auto px-4">
       <div className="text-center mb-12">
@@ -22,7 +38,10 @@ const Projects = () => {
             key={project.title}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-transform duration-150 hover:scale-102 cursor-pointer"
           >
-            <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
+            <div
+              className="relative aspect-video mb-4 rounded-lg overflow-hidden"
+              onClick={() => openModal(project)}
+            >
               <Image
                 src={project.image}
                 alt={project.title}
@@ -88,6 +107,28 @@ const Projects = () => {
             </div>
           </article>
         ))}
+        {/* {Modal} */}
+        <div className="relative max-w-4xl max-h-full">
+          {isModalOpen && selectedImage && (
+            <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+              <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
+                <button
+                  onClick={closeModal}
+                  className="cursor-pointer absolute -top-10 right-0 text-white text-2xl hover:text-gray-300 z-10"
+                >
+                  x
+                </button>
+                <Image
+                  src={selectedImage.image}
+                  alt={selectedImage.title}
+                  width={800}
+                  height={600}
+                  className="object-contain max-w-full max-h-full rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );
