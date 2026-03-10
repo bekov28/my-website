@@ -8,7 +8,7 @@ export const recentProjects: Project[] = [
     technologies: ["Vue.js", "Java", "Spring-boot", "Maven"],
     githubLink: "",
     demoLink: "https://efx.shinhan.com/",
-    image: "/projects/shinhan.png",
+    image: "/projects/shinhan-2.png",
     role: "shinhan.role",
     tasks: "shinhan.tasks",
     period: "[2025.06 - 2026.02]",

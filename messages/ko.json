@@ -26,7 +26,7 @@
       "technologies": ["Vue.js", "Java", "Spring-boot", "Maven"],
       "githubLink": "",
       "demoLink": "https://efx.shinhan.com/",
-      "image": "/projects/shinhan.png",
+      "image": "/projects/shinhan-2.png",
       "role": "[프론트엔드 개발자] - 15% 기여율",
       "tasks": [
         "JavaScript, Vue.js 및 Vite를 사용하여 웹 거래 애플리케이션을 위한 재사용 가능한 UI 구성 요소를 개발하여 새로운 기능에 대한 프론트엔드 개발 시간을 30% 단축",
@@ -205,7 +205,7 @@
       "technologies": ["Vue.js", "Java", "Spring-boot", "Maven"],
       "githubLink": "",
       "demoLink": "https://efx.shinhan.com/",
-      "image": "/projects/shinhan.png",
+      "image": "/projects/shinhan-2.png",
       "role": "Role: Front-end developer, worked on the UI/UX part, added JS logic and integrated multiple APIs, implemented the front-end components of Account Widget, Service Information, Swap Point Rate",
       "tasks": [
         "Developed reusable UI components for web trade application using JavaScript, Vue.js and Vite, reducing frontend development time for new features by 30%",
