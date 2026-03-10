@@ -20,7 +20,7 @@ export const projects: Project[] = [
     technologies: ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
     githubLink: "",
     demoLink: "https://www.eugenefutures.com/OptionsHub/index.html",
-    image: "/projects/yujin.png",
+    image: "/projects/yujin-1.png",
     role: "yujin.role",
     tasks: "",
     period: "[2025.03 ~ 2025.06.15]",
