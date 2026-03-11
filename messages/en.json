@@ -60,7 +60,7 @@
       "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
       "githubLink": "https://github.com/bekov28/jobs-website-vue",
       "demoLink": "https://jobs-website-vue.netlify.app/",
-      "image": "/projects/vue.png",
+      "image": "/projects/vue-1.png",
       "role": "[Full Stack Developer]",
       "tasks": [
         "Built reusable components in HTML, Tailwind CSS and Vue.js Composition API",
@@ -183,7 +183,7 @@
         "Learned fundamentals of Vue.js, Routing with Vue Router and Pinia state management",
         "Gained skills in Vue Reactivity, including Ref, Reactive, Binding"
       ],
-      "image": "/certificates/vue.png"
+      "image": "/certificates/vue-1.png"
     },
     "webDesign": {
       "title": "Responsive Web Design Course",
@@ -254,7 +254,7 @@
       "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
       "githubLink": "https://github.com/bekov28/jobs-website-vue",
       "demoLink": "https://jobs-website-vue.netlify.app/",
-      "image": "/projects/vue.png",
+      "image": "/projects/vue-1.png",
       "role": "",
       "tasks": "",
       "period": ""

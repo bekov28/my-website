@@ -60,7 +60,7 @@
       "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
       "githubLink": "https://github.com/bekov28/jobs-website-vue",
       "demoLink": "https://jobs-website-vue.netlify.app/",
-      "image": "/projects/vue.png",
+      "image": "/projects/vue-1.png",
       "role": "[풀 스택 개발자]",
       "tasks": [
         "HTML, Tailwind CSS 및 Vue.js Composition API에서 재사용 가능한 구성 요소 구축",
@@ -183,7 +183,7 @@
         "Vue.js, Vue 라우터를 통한 라우팅 및 Pinia 상태 관리의 기초 학습",
         "Ref 참조, 반응성, 바인딩 등 뷰 반응성 기술 습득"
       ],
-      "image": "/certificates/vue.png"
+      "image": "/certificates/vue-1.png"
     },
     "webDesign": {
       "title": "반응형 웹 디자인",
@@ -253,7 +253,7 @@
       "technologies": ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
       "githubLink": "https://github.com/bekov28/jobs-website-vue",
       "demoLink": "https://jobs-website-vue.netlify.app/",
-      "image": "/projects/vue.png",
+      "image": "/projects/vue-1.png",
       "role": "",
       "tasks": "",
       "period": ""

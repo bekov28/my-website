@@ -32,7 +32,7 @@ export const recentProjects: Project[] = [
     technologies: ["Vue.js", "Pinia", "JSON Server", "Tailwind CSS"],
     githubLink: "https://github.com/bekov28/jobs-website-vue",
     demoLink: "https://jobs-website-vue.netlify.app/",
-    image: "/projects/vue.png",
+    image: "/projects/vue-1.png",
     role: "vue.role",
     tasks: "vue.tasks",
     period: "[2025.06]",

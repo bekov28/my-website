@@ -7,7 +7,7 @@ export const certificates: Certificate[] = [
     period: "vue.period",
     description: "vue.description",
     details: "vue.details",
-    image: "/certificates/vue.png",
+    image: "/certificates/vue-1.png",
   },
   {
     id: "webDesign",
