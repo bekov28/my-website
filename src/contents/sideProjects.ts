@@ -44,7 +44,7 @@ export const sideProjects: Project[] = [
     technologies: ["React.js", "MUI", "Styled components", "React Router", "EmailJS"],
     githubLink: "https://github.com/bekov28/camper-project-react",
     demoLink: "https://campertestsite.netlify.app/",
-    image: "/projects/camper.png",
+    image: "/projects/camper-1.png",
     role: "",
     tasks: "",
     period: "",
