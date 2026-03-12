@@ -125,7 +125,8 @@
         "Built interactive and reusable user interface components with HTML5, CSS3, Vanilla JS and Vue.js",
         "Developed and designed the finance and trade web platform using JavaScript (ES6+) and implemented server-side functionality using Java, contributing to the development of RESTful APIs for front-end",
         "Collaborated with senior developers and designers to translate UI/UX wireframes into functional code",
-        "Utilized version control with Git/GitLab for code management and gained experience in debugging and troubleshooting issues according the entire application stack"
+        "Utilized version control with Git/GitLab for code management and gained experience in debugging and troubleshooting issues according the entire application stack",
+        "Implemented a scalable l10n framework using attribute-based localization, enabling seamless dynamic content switching between Korean and English"
       ],
       "stack": ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD"]
     },

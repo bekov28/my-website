@@ -125,7 +125,8 @@
         "HTML5, CSS3, Vanila JS 및 Vue.js와 함께 상호 작용하고 재사용 가능한 사용자 인터페이스 구성 요소 구축",
         "자바스크립트(ES6+)를 사용하여 금융 웹 플랫폼을 개발하고, 자바를 사용하여 서버 측 기능을 구현하여 프론트엔드용 RESTful API 개발에 기여",
         "시니어 개발자 및 디자이너와 협력하여 UI/UX 와이어프레임을 기능 코드로 변환",
-        "코드 관리를 위해 Git/GitLab과 함께 version control을 사용하여 전체 애플리케이션 스택에 따른 디버깅 및 문제 해결 경험"
+        "코드 관리를 위해 Git/GitLab과 함께 version control을 사용하여 전체 애플리케이션 스택에 따른 디버깅 및 문제 해결 경험",
+        "속성 기반 localization을 사용하여 확장 가능한 l10n 프레임워크를 구현하여 한국어와 영어 간의 원활한 동적 콘텐츠 전환 가능"
       ],
       "stack": ["JavaScript", "Vue.js", "Java", "Spring-Boot", "Git", "CI/CD"]
     },
