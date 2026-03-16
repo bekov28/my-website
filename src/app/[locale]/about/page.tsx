@@ -1,6 +1,6 @@
 "use client";
 
-import { FaCode, FaGraduationCap, FaLaptopCode, FaUserFriends } from "react-icons/fa";
+import { FaCode, FaGraduationCap, FaInstalod, FaLaptopCode, FaUserFriends } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { pageTransition } from "@/utils/animation";
 import { scaleIn } from "@/utils/animation";
@@ -232,6 +232,32 @@ const AboutPage = () => {
               </span>
               <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
                 {t("smooth")}
+              </span>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg gap-6 shadow-md">
+            <div className="flex gap-3 justify-center items-center">
+              <FaInstalod className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">{t("aiTools")}</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                ChatGPT (OpenAI)
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Claude
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Gemini AI
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                GitHub Copilot
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                DeekSeek
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium border bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800 dark:bg-opacity-20 dark:border-opacity-30">
+                Cursor AI
               </span>
             </div>
           </div>
