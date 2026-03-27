@@ -38,11 +38,11 @@
       "period": "[2025.06 - 2026.02]"
     },
     "yujin": {
-      "title": "[Team Work] Eugene Securities US Stock Options Trading Platform (Web/Mobile)",
+      "title": "[Team Work] Options Hub, Trading Mobile App",
       "description": "This mobile trading application allows Korean customers to trade US stocks and options through long and short spreads and customers can also open an account for trading.",
       "technologies": ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
       "githubLink": "",
-      "demoLink": "https://www.eugenefutures.com/OptionsHub/index.html",
+      "demoLink": "",
       "image": "/projects/yujin-1.png",
       "role": "[Front-end developer] - 10% Contribution Rate",
       "tasks": [
@@ -218,11 +218,11 @@
       "period": "[2025.06 ~ 2026.02]"
     },
     "yujin": {
-      "title": "[Team Work] Eugene Securities US Stock Options Trading Platform (Web/Mobile) [2025.03 - 2025.05]",
+      "title": "[Team Work] Options Hub, Trading Mobile App [2025.03 - 2025.05]",
       "description": "This mobile trading application allows Korean customers to trade US stocks and options through long and short spreads and customers can also open an account for trading.",
       "technologies": ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
       "githubLink": "",
-      "demoLink": "https://www.eugenefutures.com/OptionsHub/index.html",
+      "demoLink": "https://play.google.com/store/apps/details?id=com.eugenefutures.optionshub&hl=ko",
       "image": "/projects/yujin-1.png",
       "role": "Role: Front-end developer for UI/UX (contribution rate: 10%) with other 3 front-end developers in the small team. Collaborated with other senior developers and the design team to refine project requirements and fixed bugs.",
       "tasks": "",

@@ -38,7 +38,7 @@
       "period": "[2025.06 - 2026.02]"
     },
     "yujin": {
-      "title": "[팀 프로젝트] 유진증권 미국 주식 옵션 거래 플랫폼 (웹/모바일)",
+      "title": "[팀 프로젝트] Options Hub 트레이딩 모바일 앱",
       "description": "이 모바일 거래 애플리케이션은 한국 고객이 미국 주식과 옵션을 롱 및 숏 스프레드를 통해 거래할 수 있도록 하며, 고객은 거래를 위해 계정을 열 수도 있습니다.",
       "technologies": ["SCSS", "JavaScript", "Java", "Spring-boot", "Gradle"],
       "githubLink": "",
