@@ -1,0 +1,17 @@
+name: Lighthouse Audit
+on:
+  push:
+    branches: [ main ]
+jobs:
+  generate_badges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate Lighthouse Badges
+        uses: myactionway/lighthouse-badger-action@v2.2
+        with:
+          urls: 'https://misterberd.com' # Replace with your URL
+          label: 'Lighthouse'
+          # This stores badges in a branch called 'badges'
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
