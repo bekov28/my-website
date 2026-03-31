@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Prepare directory
+        run: mkdir -p temp_lighthouse_badges_nested
+
       - name: Generate Lighthouse Badges
         uses: myactionway/lighthouse-badger-action@v2.2
         with:
