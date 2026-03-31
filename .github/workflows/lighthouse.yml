@@ -14,6 +14,6 @@ jobs:
         uses: myactionway/lighthouse-badger-action@v2.2
         with:
           urls: "https://misterberd.com" # Replace with your URL
-          label: "Lighthouse"
-          # This stores badges in a branch called 'badges'
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'charts: update lighthouse badges'
