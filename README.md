@@ -29,6 +29,15 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+# 🚀 Portfolio Performance
+
+![Performance](https://img.shields.io/badge/Performance-96%25-brightgreen?style=flat-square&logo=googlechrome&logoColor=white)
+![Accessibility](https://img.shields.io/badge/Accessibility-84%25-orange?style=flat-square&logo=accessiblenetwork&logoColor=white)
+![Best Practices](https://img.shields.io/badge/Best%20Practices-100%25-brightgreen?style=flat-square&logo=checkmarx&logoColor=white)
+![SEO](https://img.shields.io/badge/SEO-92%25-brightgreen?style=flat-square&logo=google&logoColor=white)
+
+> *Audit conducted via Lighthouse in Chrome Incognito mode on March 31, 2026.*
+
 ## Tech Stack I used in this portfolio-project:
 
 - Next.js - Used Next.js 16 for SSR capabilities to improve SEO and initial load time
