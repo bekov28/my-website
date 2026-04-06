@@ -1,0 +1,81 @@
+/* CSS Custom Properties - Theme Values */
+:root {
+    --background: 249 248 245;
+    --foreground: 10 25 47;
+
+    --card: 255 255 255;
+    --card-foreground: 10 25 47;
+
+    --popover: 255 255 255;
+    --popover-foreground: 10 25 47;
+
+    --primary: 13 148 136;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 239 236 230;
+    --secondary-foreground: 10 25 47;
+
+    --muted: 243 240 234;
+    --muted-foreground: 100 116 139;
+
+    --accent: 13 148 136;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+
+    --border: 229 225 216;
+    --input: 229 225 216;
+    --ring: 13 148 136;
+
+    --radius: 1rem;
+
+    --chart-1: #0D9488;
+    --chart-2: #0A192F;
+    --chart-3: #14B8A6;
+    --chart-4: #334155;
+    --chart-5: #94A3B8;
+
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-heading: "Playfair Display", system-ui, sans-serif;
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  /* Apply base font */
+  body {
+    font-family: var(--font-sans);
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbars globally (both vertical and horizontal) */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  /* Safe area utilities for mobile */
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+  .pl-safe { padding-left: env(safe-area-inset-left, 0px); }
+  .pr-safe { padding-right: env(safe-area-inset-right, 0px); }
+
+  /* Hide scrollbar but allow scrolling */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Smooth transitions for interactive elements */
+  button, a, [role="button"] {
+    transition: all 0.15s ease;
+  }
+
+  /* Better image rendering */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
