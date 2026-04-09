@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "name": "베르디료르 오즈쿨로브",
+    "name": "버드",
     "home": "홈",
     "about": "소개",
     "projects": "프로젝트",
@@ -309,6 +309,6 @@
     "sendButton": "보내기"
   },
   "Footer": {
-    "name": "베르디료르 오즈쿨로브"
+    "name": "버드"
   }
 }
